@@ -1,6 +1,6 @@
 <?php
-    $dbname = "APP-MVC";
-    $host='localhost';
+    $dbname = "dohome";
+    $host='localhost:3307';
     $user='root';
     $pass='root';
 
