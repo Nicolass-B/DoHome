@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/skeleton.css"/>
     <link rel="stylesheet" href="../css/normalize.css"/>
     <title>Accueil DoHome enterprise ™</title>
 </head>
-<div>
-
-    <img src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
+<div class="container">
+    <div class="row">
+        <div class="one">
+            <img src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
+        </div>
+    </div>
 </div>
     <div class="container">
         <div class="row">
-            <div class="one-half column" style="margin-top: 25%">
+            <div class="one-half column">
                 <h1>DoHome enterprise ™</h1>
                 <p> l'approche sociale dans notre pays encourage la diversité
                     et la sensibilité d'un mouvement cheminant vers plus d'unité.
