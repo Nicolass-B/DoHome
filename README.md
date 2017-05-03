@@ -7,3 +7,9 @@ APP 2017 - Informatiquee
 - Guillaume : BDD
 - Clément : Dashboard
 - Antoine : Mes Capteurs / Capteur / Gabarit_loggedon
+
+
+## TODO
+
+- things
+- Other things
