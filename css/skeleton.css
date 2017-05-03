@@ -76,7 +76,9 @@
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%;
+  .one-half.column{
+      border: 2px solid black;
+      width: 48%;
       text-align: justify;
       text-justify: inter-word;}
 
@@ -123,6 +125,9 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
+  width: 70%;
+  height: 70%;
+  background: url("../img/fond decran page.jpg") fixed no-repeat;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -254,7 +259,7 @@ input[type="password"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+           }
 textarea {
   min-height: 65px;
   padding-top: 6px;
