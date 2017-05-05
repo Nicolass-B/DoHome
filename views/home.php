@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="../css/skeleton.css"/>
     <link rel="stylesheet" href="../css/normalize.css"/>
     <title>Accueil DoHome enterprise ™</title>
-    <link rel="icon" type="image/ico" href="../favicon.ico">
+    <link rel="icon" type="image/ico" href="../img/favicon.ico">
 </head>
-<body><body>
+<body>
 
 <header>
     <div class="container">
