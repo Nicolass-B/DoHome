@@ -42,10 +42,18 @@
         <div class="température">
             <p>Température</p>
             <form method="post" action="mode.php">
-                <select name="mode" id="mode">
-                    <option value="">Nuit</option>
-                    <option value="jour">Jour</option>
-                    <option value="vacances">Vacances</option>
+                <select name="température" id="température">
+                    <option value="15">15°C</option>
+                    <option value="16">16°C</option>
+                    <option value="17">17°C</option>
+                    <option value="18">18°C</option>
+                    <option value="19">19°C</option>
+                    <option value="20">20°C</option>
+                    <option value="21">21°C</option>
+                    <option value="22">22°C</option>
+                    <option value="23">23°C</option>
+                    <option value="24">24°C</option>
+                    <option value="25">25°C</option>
                 </select>
             </form>
         </div>
