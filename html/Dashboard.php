@@ -23,41 +23,99 @@
 </header>
 
 <section>
-    <div class="information">
+    <section1>
+        <div class="information">
 
-        <div class="alarme">
-            <p>Alarme</p>
-            <img class="ON-OFF" src="../img/button-off-xxl.png" alt="ON-OFF">
+            <div class="alarme">
+                <p>Alarme</p>
+                <script type="text/javascript">
+                    function onoff(){
+                        currentvalue = document.getElementById('onoff').value;
+                        if(currentvalue == "Off"){
+                            document.getElementById("onoff").value="On";
+                        }
+                        else{
+                            document.getElementById("onoff").value="Off";
+                        }
+                    }
+                </script>
+
+                <input type="button" value="On" id="onoff" onclick="onoff();">
+            </div>
+            <div class="mode">
+                <p>Mode</p>
+                <form method="post" action="mode.php">
+                    <select name="mode" id="mode">
+                        <option value="nuit">Nuit</option>
+                        <option value="jour">Jour</option>
+                        <option value="vacances">Vacances</option>
+                    </select>
+                </form>
+            </div>
+            <div class="température">
+                <p>Température</p>
+                <form method="post" action="mode.php">
+                    <select name="température" id="température">
+                        <option value="15">15°C</option>
+                        <option value="16">16°C</option>
+                        <option value="17">17°C</option>
+                        <option value="18">18°C</option>
+                        <option value="19">19°C</option>
+                        <option value="20">20°C</option>
+                        <option value="21">21°C</option>
+                        <option value="22">22°C</option>
+                        <option value="23">23°C</option>
+                        <option value="24">24°C</option>
+                        <option value="25">25°C</option>
+                    </select>
+                </form>
+            </div>
         </div>
-        <div class="mode">
-            <p>Mode</p>
-            <form method="post" action="mode.php">
-                <select name="mode" id="mode">
-                    <option value="nuit">Nuit</option>
-                    <option value="jour">Jour</option>
-                    <option value="vacances">Vacances</option>
-                </select>
-            </form>
+    </section1>
+    <section2>
+        <div class="information">
+            <div class="volets">
+                <p>Volets</p>
+                <script type="text/javascript">
+                    function Ouverture(){
+                        currentvalue = document.getElementById('Ouverture').value;
+                        if(currentvalue == "Ouvrir"){
+                            document.getElementById("Ouverture").value="Fermer";
+                        }
+                        else{
+                            document.getElementById("Ouverture").value="Ouvrir";
+                        }
+                    }
+                </script>
+                <input type="button" value="Ouvrir" id="Ouverture" onclick="Ouverture();">
+
+            </div>
+
+            <div class="lumiere">
+                <p>Lumières</p>
+                <script type="text/javascript">
+                    function Allumage(){
+                        currentvalue = document.getElementById('Allumage').value;
+                        if(currentvalue == "Allumer"){
+                            document.getElementById("Allumage").value="Eteindre";
+                        }
+                        else{
+                            document.getElementById("Allumage").value="Allumer";
+                        }
+                    }
+                </script>
+                <input type="button" value="Allumer" id="Allumage" onclick="Allumage();">
+            </div>
         </div>
-        <div class="température">
-            <p>Température</p>
-            <form method="post" action="mode.php">
-                <select name="température" id="température">
-                    <option value="15">15°C</option>
-                    <option value="16">16°C</option>
-                    <option value="17">17°C</option>
-                    <option value="18">18°C</option>
-                    <option value="19">19°C</option>
-                    <option value="20">20°C</option>
-                    <option value="21">21°C</option>
-                    <option value="22">22°C</option>
-                    <option value="23">23°C</option>
-                    <option value="24">24°C</option>
-                    <option value="25">25°C</option>
-                </select>
-            </form>
-        </div>
-    </div>
+
+    </section2>
+
+    <section3>
+
+    </section3>
+
+    http://www.meteofrance.com/previsions-meteo-france/paris-15e-arrondissement/75015#seven-days
+
 </section>
 
 </body>
