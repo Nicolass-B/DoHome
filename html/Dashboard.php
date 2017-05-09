@@ -123,7 +123,8 @@
                                 Météo Paris</a> ©
                             <a href="http://www.meteocity.com">meteocity.com</a>
                         </div>
-                        <script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx"></script>
+                        <script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx">
+                        </script>
                     </div>
                 </div>
             </div>
@@ -135,6 +136,10 @@
                     <p>Vidéosurveillance</p>
                     <video src="../img/Zombieland copie.mp4" controls poster="../img/fond-decran-page2.jpg" width="200">
                     </video>
+                    <p>Salon</p>
+                    <video src="../img/Zombieland copie.mp4" controls poster="../img/fond-decran-page2.jpg" width="200">
+                    </video>
+                    <p>Chambre parents</p>
                 </div>
             </div>
         </section4>
@@ -157,10 +162,11 @@
 
 </section>
 
+</body>
+
 <footer>
     <div class="Powered">Powered By DoHome Enterprise™</div>
     <div class="Mentions">Mentions Légales</div>
 </footer>
 
-</body>
 </html>
