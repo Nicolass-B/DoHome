@@ -9,17 +9,15 @@
 <body>
 
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="one">
+    <div id="container">
+            <div class="imgpetite">
                 <img src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
             </div>
-        </div>
     </div>
 </header>
-f
+
 <section>
-    <div class="container">
+    <div id="container2">
         <div class="row">
             <div class="one-half column">
              <h1>DoHome enterprise ™</h1>
