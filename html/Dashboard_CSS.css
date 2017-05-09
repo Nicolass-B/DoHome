@@ -1,6 +1,7 @@
 body {
     background: url("../img/fond-decran-page2.jpg") fixed no-repeat center;
     background-size: cover;
+    background-image:linear-gradient(to bottom right,#ffc83c,#ff3d3d);
     margin:0;
 }
 header{
