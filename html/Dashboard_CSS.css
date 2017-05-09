@@ -53,7 +53,7 @@ nav{
     margin: 15px;
     text-align: center;
     horizontal-align: middle ;
-    background-color: rgba(255,255,255,0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255,255,255,0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 .alarme{
@@ -64,7 +64,7 @@ nav{
     margin: 15px;
     text-align: center;
     horizontal-align: middle ;
-    background-color: rgba(255,255,255,0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255,255,255,0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 .température{
@@ -75,7 +75,7 @@ nav{
     margin: 15px;
     text-align: center;
     horizontal-align: middle ;
-    background-color: rgba(255,255,255,0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255,255,255,0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 h2{
@@ -91,25 +91,25 @@ h2{
 .lumiere{
     border-radius: 20px;
     width: 150px;
-    height: 130px;
+    height: 150px;
     border: 2px solid black;
     padding: 15px;
     margin: 15px;
     text-align: center;
     horizontal-align: middle ;
-    background-color: rgba(255,255,255,0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255,255,255,0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 .volets{
     border-radius: 20px;
     width: 150px;
-    height: 130px;
+    height: 150px;
     border: 2px solid black;
     padding: 15px;
     margin: 15px;
     text-align: center;
     horizontal-align: middle ;
-    background-color: rgba(255,255,255,0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255,255,255,0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 HD{
@@ -119,26 +119,26 @@ HD{
 
 .meteo {
     border-radius: 20px;
-    width: 300px;
-    height: 310px;
+    width: 305px;
+    height: 350px;
     border: 2px solid black;
     padding: 15px;
     margin: 15px;
     text-align: center;
     horizontal-align: middle;
-    background-color: rgba(255, 255, 255, 0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255, 255, 255, 1); /*Opacité du fond blanche à 0.7*/
 }
 
 .video {
     border-radius: 20px;
     width: 300px;
-    height: 310px;
+    height: 350px;
     border: 2px solid black;
     padding: 15px;
     margin: 15px;
     text-align: center;
     horizontal-align: middle;
-    background-color: rgba(255, 255, 255, 0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255, 255, 255, 0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 .modification{
@@ -148,7 +148,7 @@ HD{
     margin: 15px;
     text-align: center;
     horizontal-align: middle;
-    background-color: rgba(255, 255, 255, 0.7); /*Opacité du fond blanche à 0.7*/
+    background-color: rgba(255, 255, 255, 0.8); /*Opacité du fond blanche à 0.7*/
 }
 
 .Powered{

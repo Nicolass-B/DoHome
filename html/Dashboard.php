@@ -117,13 +117,13 @@
         <section3>
             <div class="information">
                 <div class="meteo">
-                    <div id="cont_NzUwNTZ8NXwyfDR8NXxCN0I3Qjd8MXwwMDAwMDB8Y3wx">
-                        <div id="spa_NzUwNTZ8NXwyfDR8NXxCN0I3Qjd8MXwwMDAwMDB8Y3wx">
-                            <a id="a_NzUwNTZ8NXwyfDR8NXxCN0I3Qjd8MXwwMDAwMDB8Y3wx" href="http://www.meteocity.com/france/paris_v75056/" target="_blank" style="color:#333;text-decoration:none;">Météo Paris</a> ©
+                    <div id="cont_NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx">
+                        <div id="spa_NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx">
+                            <a id="a_NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx" href="http://www.meteocity.com/france/paris_v75056/" target="_blank" style="color:#333;text-decoration:none;">
+                                Météo Paris</a> ©
                             <a href="http://www.meteocity.com">meteocity.com</a>
                         </div>
-                        <script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NXwyfDR8NXxCN0I3Qjd8MXwwMDAwMDB8Y3wx">
-                        </script>
+                        <script type="text/javascript" src="http://widget.meteocity.com/js/NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx"></script>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,12 @@
         <section5>
             <div class="information">
                 <div class="modification">
-                    <p>Modifier mon Dashboard</p>
+                    <?php
+                    $date = date("D-d-M-Y");
+                    $heure = date("H:i");
+                    Print("$date");
+                    Print("$heure");
+                    ?>
                 </div>
             </div>
         </section5>
