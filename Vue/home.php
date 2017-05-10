@@ -2,26 +2,29 @@
 <html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/skeleton.css"/>
-    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/styleHome.css"/>
     <title>Accueil DoHome enterprise ™</title>
 </head>
 <body>
 
 
 <header>
-    <div class="container1">
-        <figure>
-            <img class="logo" src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
-        </figure>
+    <div class="topPage">
+        <logo>
+            <img class="logo"  src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
+        </logo>
 
-        <p>
-            DoHome <span>enterprise ™</span>
-        </p>
+        <changeLangue>
+            <ul>
+                <li><a href="">FR</a></li>
+                <li><a href="">EN</a></li>
+            </ul>
+        </changeLangue>
+
     </div>
 </header>
 
-
+<div class="corpPage">
 <section>
     <div class="textIntro">
         <p>
@@ -45,7 +48,7 @@
 </section>
 
 <section>
-    <div class="container2">
+    <div class="connexion-inscription">
      <form method="post" action="connexion.php">
 
        <input type="text" name="pseudo" id="pseudo" placeholder="Login" autofocus required/>
@@ -59,10 +62,10 @@
     </div>
 </section>
 
-
+</div>
 
 <footer>
-    <div class="container3">
+    <div class="piedPage">
         <div class="powered">Powered By DoHome Enterprise™ + ♥ from Paris</div>
         <div class="legalMention">Mentions Légales</div>
     </div>

@@ -9,7 +9,7 @@ APP 2017 - Informatiquee
 - Antoine : Mes Capteurs / Capteur / Gabarit_loggedon
 - Sébastien : Backoffice, FAQ, Boutique
 - Ali :
-- Nicolas
+- Nicolas : Accueil, inscription, profil
 
 ## TODO
 

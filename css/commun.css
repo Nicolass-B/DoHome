@@ -56,11 +56,11 @@ body {
     background-size: cover ;
     margin: 0;
 
-  background: url("../img/fond decran page.jpg") fixed no-repeat center ;
+  background: url("../img/background.jpg") fixed no-repeat center ;
     font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  }
 
 html {
   font-size: 62.5%; }

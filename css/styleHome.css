@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background: url("../img/background.jpg") fixed no-repeat ;
+    background-size: cover ;
+    margin: auto;
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+}
+
+
+
+.topPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    margin-right: 30px;
+}
+li{
+    border: 1px solid black;
+    display: inline;
+    font-size: 15px;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 50%;
+    height: 90%;
+}
+.changeLangue{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+.corpPage{
+    display: flex;
+
+    flex-direction: row;/*organisés sur une ligne*/
+    justify-content: space-between;/* éléments sont étirés sur tout l'axe*/
+    align-items: center;/*alignés au centre*/
+}
+.textIntro{
+    background-color: white;
+    opacity: 0.7;
+    border: 1px solid black;
+    color: black;
+    margin: 30px;
+    padding: 15px;
+    width: 40%;
+    text-align: justify;
+    font-weight: bold;
+    text-justify: inter-word;
+}
+
+.connexion-inscription{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    opacity: 0.7;
+    border: 1px solid black;
+    color : black;
+    font-weight: bold;
+    margin-right: 30px;
+}
+input[type=submit] {
+    width: 150px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+.piedPage{
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: brown;*/
+    color : white;
+    text-align: center;
+}
+.piedPage > powered{
+    text-align: center;
+    order: 1;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+.legalMention{
+    text-align: right;
+    align-items: center;
+    order: 2;
+    margin-bottom: 50px;
+
+}

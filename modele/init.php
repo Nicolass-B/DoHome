@@ -5,11 +5,12 @@
  * Date: 05/05/2017
  * Time: 10:27
  */
-
-$dbname = "dohome";
-$host='localhost';
-$user='root';
-//$pass='root';
-
-$db = new PDO("mysql:host=$host;dbname=$dbname", "$user");
-$db->query("SET NAMES UTF8");
+    $connect =  mysqli_connect('localhost', 'root', 'root', 'dohomebdd', 3306);
+    if(!$connect)
+    {
+        die("connection failed: " . mysqli_connect_error());
+}
+    else{
+        echo "connecter";
+    }
+    ?>

@@ -39,7 +39,24 @@
       </div>
     </div>
   </div>
-
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: Antoine
+ * Date: 05/05/2017
+ * Time: 10:27
+ */
+// $db = mysqli_connect("localhost", "root", "root","dohomebdd" );
+$connect = mysqli_connect('localhost', 'root', 'root', 'dohomebdd');
+if(!$connect)
+{
+    printf("échec de la connection : %s\n",mysqli_connect_error());
+    exit();
+}
+else{
+    echo "connecté";
+}
+?>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
