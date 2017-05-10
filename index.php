@@ -1,46 +1,70 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+<?php
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+session_start();
+require_once("Modele/init.php");
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/commun.css">
+if (isset($_GET['home']))
+{
+    if ($_GET['home'] == "form")
+    {
+        include ("controller/inscription.php");
+    }
+    else if ($_GET['inscription'] == "verif")
+    {
+        include ("controller/inscription.php");
+    }
+}
+else if (!isset($_SESSION["id_client"]))
+{
+    //require("Vue/login.php");
+    ?><link rel="stylesheet" href="Styles/login.css" /><?php
+    include("Controleur/login.php");
+}
+else
+{
+    if(isset($_GET['cible']))
+    { // on regarde la page où il veut aller
+        if($_GET['cible'] == 'accueil' || $_GET['cible'] == 'verif')
+        {    //include("Vue/accueil.php");
+            ?>
+            <script type="text/javascript">
+                setTimeout("document.location='accueil.php'; " , 20);
+            </script>
+            <?php
+        }
+        else if ($_GET['cible'] == "deconnexion")
+        {
+            // Détruit toutes les variables de session
+            $_SESSION = array();
+            if (isset($_COOKIE[session_name()]))
+            {
+                setcookie(session_name(), '', time()-42000, '/');
+            }
+            session_destroy();
+            ?><link rel="stylesheet" href="Styles/login.css" /><?php
+            include ("Controleur/login.php");
+        }
+        else if ($_GET['cible'] == "gen")
+        {
+            include('genValeurs.php');
+        }
+    }
+    else if ($_SESSION["admin"])
+    {
+        ?><script type="text/javascript">
+        setTimeout("document.location='clients.php'; " , 20);
+    </script>
+        <?php
+    }
+    else
+    {
+        ?><script type="text/javascript">
+        setTimeout("document.location='accueil.php'; " , 20);
+    </script>
+        <?php
+    }
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="img/favicon.ico">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+}
+?>
