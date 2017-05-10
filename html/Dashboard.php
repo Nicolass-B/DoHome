@@ -10,40 +10,43 @@
 <body>
 
 <header>
-    <div class="container">
-            <img class="logo" src="../img/fond_transparent2.png" alt="logo de l'entreprise">
-        <nav>
-            <ul class="menu">
-                <li>Dashboard</li>
-                <li>Mon profil</li>
-                <li>Ma maison</li>
-                <li>Boutique</li>
-            </ul>
-        </nav>
-    </div>
+    <D>
+        <section>
+            <div class="container">
+                <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise">
+                <nav>
+                    <ul class="menu">
+                        <li>Dashboard</li>
+                        <li>Mon profil</li>
+                        <li>Ma maison</li>
+                        <li>Boutique</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section>
+            <div class="recherche">
+                <form action="/search" id="searchthis" method="get">
+                    <input id="search" name="q" type="text" placeholder="Rechercher" />
+                    <input id="search-btn" type="submit" value="Rechercher" />
+                </form>
+            </div>
+        </section>
+
+    </D>
 </header>
 
 <section>
     <HD>
-
         <section1>
             <div class="information">
-
                 <div class="alarme">
                     <p>Alarme</p>
-                    <script type="text/javascript">
-                        function onoff(){
-                            currentvalue = document.getElementById('onoff').value;
-                            if(currentvalue == "Off"){
-                                document.getElementById("onoff").value="On";
-                            }
-                            else{
-                                document.getElementById("onoff").value="Off";
-                            }
-                        }
-                    </script>
-
-                    <input type="button" value="On" id="onoff" onclick="onoff();">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider round"></div>
+                    </label>
                 </div>
                 <div class="mode">
                     <p>Mode</p>
@@ -115,7 +118,6 @@
         </section2>
 
         <section3>
-            <div class="information">
                 <div class="meteo">
                     <div id="cont_NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx">
                         <div id="spa_NzUwNTZ8NHwyfDR8MnxGRkZGRkZ8MXw2NjY2NjZ8Y3wx">
@@ -127,7 +129,6 @@
                         </script>
                     </div>
                 </div>
-            </div>
         </section3>
 
         <section4>
@@ -148,12 +149,12 @@
     <BD>
         <section5>
             <div class="information">
-                <div class="modification">
+                <div class="date">
                     <?php
                     $date = date("D-d-M-Y");
                     $heure = date("H:i");
+                    Print("$heure"); echo '<br>';
                     Print("$date");
-                    Print("$heure");
                     ?>
                 </div>
             </div>
