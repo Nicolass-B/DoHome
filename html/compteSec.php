@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="../css/compteSec.css"/>
+    <link rel="stylesheet" href="../css/profil.css"/>
     <title> Mes comptes secondaires </title>
 </head>
 <body>

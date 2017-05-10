@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="../css/compteSec.css"/>
+    <link rel="stylesheet" href="../css/profil.css"/>
     <title> Mon profil </title>
 </head>
 <body>
@@ -28,12 +28,12 @@
         </div>
     </ul>
     <p>
-        <div class = "formulaire">
+    <div class="formulaire">
         <ul>
             Nom
-            <li><input type="text" name="pseudo" value="Nom" disabled="disabled" /></li>
+            <li><input type="text" name="pseudo" value="Nom" disabled="disabled"/></li>
             Prénom
-            <li><input type="text" name="pseudo" value="Prénom" disabled="disabled" /></li>
+            <li><input type="text" name="pseudo" value="Prénom" disabled="disabled"/></li>
             E-mail
             <li><input type="text" name="pseudo" value="adresse mail"/></li>
             Mot de passe
@@ -41,14 +41,13 @@
             Adresse
             <li><input type="text" name="pseudo" value="adresse mail"/></li>
             Date de naissance
-            <li><input type="date" /></li>
+            <li><input type="date"/></li>
             Numéro de téléphone
             <li><input type="text" name="pseudo" value="numéro"/></li>
 
 
-
         </ul>
-        </div>
+    </div>
 
     </p>
 
