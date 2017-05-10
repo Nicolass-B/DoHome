@@ -21,6 +21,7 @@ section {
     margin-top: 3%;
     margin-bottom: 3%;
     padding-left: 15px;
+    padding-bottom : 1%;
     width: 85%;
     border: 2px black solid;
     border-radius: 20px;
@@ -40,8 +41,12 @@ ul {
     list-style: none;
 }
 
-li {
+.menu li {
 
+    border-left: 2px solid black;
+    padding: 6px;
+}
+.menusec li {
     border-left: 2px solid black;
     padding: 6px;
 }
@@ -49,6 +54,7 @@ li {
 li:first-child {
     border-left: none;
 }
+
 
 .menu {
     display: flex;
@@ -58,6 +64,18 @@ li:first-child {
     display: flex;
     font-family: "Comic Sans MS";
     font-size: 1.5em;
+}
+.menusec a {
+    color: black;
+}
+a:focus {
+    color : rgba(255,0,0,0.8);
+    text-decoration: no-underline;
+
+}
+#enCours a {
+    text-decoration: none;
+    color:grey;
 }
 
 .imagepp {
@@ -94,4 +112,9 @@ li:first-child {
 .bouton3 {
     margin-left: 80%;
     margin-bottom: 30px;
+}
+
+.formulaire li
+{
+    padding-bottom: 20px;
 }

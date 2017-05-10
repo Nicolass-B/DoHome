@@ -1,0 +1,50 @@
+nav {
+    font-family: "Cooper Black";
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: large;
+
+}
+header {
+    display: flex;
+    border-bottom: 2px black solid;
+}
+body {
+    background: url(fondEcran.jpg) fixed no-repeat center;
+    background-size: cover;
+    margin: 0;
+}
+.imgpetite {
+     width: 10%;
+     height: 10%;
+     float: left;
+ }
+
+section {
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 15px;
+    width: 85%;
+    border: 2px black solid;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+
+    border-left: 2px solid black;
+    padding: 6px;
+}
+
+li:first-child {
+    border-left: none;
+}
+.menu {
+    display: flex;
+}

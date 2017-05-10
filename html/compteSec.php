@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="../css/compteSec.css"/>
-    <title> Profil </title>
+    <title> Mes comptes secondaires </title>
 </head>
 <body>
 
@@ -25,8 +25,8 @@
 
     <ul>
         <div class="menusec">
-            <li>Mon profil</li>
-            <li>Mes comptes secondaires</li>
+            <li><a href="monProfil.php">Mon profil</a></li>
+            <li id="enCours"><a href="compteSec.php">Mes comptes secondaires</a></li>
         </div>
     </ul>
 
