@@ -1,0 +1,57 @@
+body {
+    background-size: cover;
+    background: url("../img/fond-decran-page2.jpg") fixed no-repeat center;
+    background-image:linear-gradient(to bottom right, #fdfffd, #281b88);
+    margin:0;
+}
+
+header{
+    border-bottom: 2px dotted black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    padding: 6px;
+    border-left: 2px solid black;
+}
+
+li:first-child{
+    border-left:none;
+}
+
+nav{
+    font-family: "Cooper Black";
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: large;
+}
+
+.container{
+    display: flex; /* permet d'aligner image et texte */
+}
+
+.logo{
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.lettre{
+    width: 5%;
+    height: 5%;
+}
