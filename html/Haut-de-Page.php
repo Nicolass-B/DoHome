@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="../html/Dashboard_CSS.css"/>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Nom de la page</title>
 </head>
 
 <body>

@@ -49,6 +49,10 @@ nav{
     color: white;
 }
 
+green{
+    color: #00c555;
+}
+
 .container{
     display: flex; /* permet d'aligner image et texte */
 }

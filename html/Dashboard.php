@@ -16,7 +16,7 @@
                 <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise">
                 <nav>
                     <ul class="menu">
-                        <li>Dashboard</li>
+                        <li><green>Dashboard</green></li>
                         <li>Mon profil</li>
                         <li>Ma maison</li>
                         <li>Boutique</li>
