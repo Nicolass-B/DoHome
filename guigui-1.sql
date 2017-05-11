@@ -1,0 +1,2 @@
+UPDATE dohome.user SET Mail = 'mabite@gmail.xxx', Prenom = 'Nicolas', Nom = 'Kiris', telephone = '064206969', mot_de_passe = 'azerty', Adresse = 'no', Is_admin = 0 WHERE id = 1;
+UPDATE dohome.user SET Mail = 'test@test.Com', Prenom = 'Nicolas', Nom = 'lelelelel', telephone = '064206969', mot_de_passe = 'azerty', Adresse = 'no', Is_admin = 0 WHERE id = 2;
