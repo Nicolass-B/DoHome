@@ -1,2 +1,2 @@
-INSERT INTO dohome.user (id, Mail, Prenom, Nom, telephone, mot_de_passe, Adresse, Is_admin) VALUES (1, 'mabite@gmail.xxx', 'Nicolas', 'Kiris', '064206969', 'azerty', 'no', 0);
-INSERT INTO dohome.user (id, Mail, Prenom, Nom, telephone, mot_de_passe, Adresse, Is_admin) VALUES (2, 'test@test.Com', 'Nicolas', 'lelelelel', '064206969', 'azerty', 'no', 0);
+UPDATE dohome.user SET Mail = 'mabite@gmail.xxx', Prenom = 'Nicolas', Nom = 'Kiris', telephone = '064206969', mot_de_passe = 'azerty', Adresse = 'no', Is_admin = 0 WHERE id = 1;
+UPDATE dohome.user SET Mail = 'test@test.Com', Prenom = 'Nicolas', Nom = 'lelelelel', telephone = '064206969', mot_de_passe = 'azerty', Adresse = 'no', Is_admin = 0 WHERE id = 2;
