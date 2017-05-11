@@ -95,7 +95,6 @@
                         }
                     </script>
                     <input type="button" value="Ouvrir" id="Ouverture" onclick="Ouverture();">
-
                 </div>
 
                 <div class="lumiere">
@@ -149,13 +148,19 @@
     <BD>
         <section5>
             <div class="information">
-                <div class="date">
-                    <?php
-                    $date = date("D-d-M-Y");
-                    $heure = date("H:i");
-                    Print("$heure"); echo '<br>';
-                    Print("$date");
-                    ?>
+                <div class="date_heure">
+                    <div class="heure">
+                        <?php
+                        $heure = date("H:i");
+                        Print("$heure"); echo '<br>';
+                        ?>
+                    </div>
+                    <div class="date">
+                        <?php
+                        $date = date("D-d-M-Y");
+                        Print("$date");
+                        ?>
+                    </div>
                 </div>
             </div>
         </section5>

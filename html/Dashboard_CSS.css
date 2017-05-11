@@ -22,14 +22,8 @@ D{
 
 .recherche{
     display: flex;
-    margin-top: 10%;
+    margin-top: 8%;
 }
-
-.lettre{
-    width: 15%;
-    height: 15%;
-}
-
 
 ul{
     list-style: none;
@@ -61,8 +55,8 @@ nav{
 
 .logo{
     float: left;
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
 
 .information{
@@ -145,6 +139,57 @@ h2{
 
 }
 
+#Ouverture{
+    width:100px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
+}
+
+#Allumage{
+    width:100px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
+}
+
+#température{
+    width:100px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
+}
+
+#mode{
+    width:100px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
+}
+
+
+
+
 HD{
     display: flex;
     justify-content: space-around;
@@ -178,7 +223,7 @@ HD{
     margin-right: 0;
 }
 
-.date{
+.date_heure{
     border-radius: 20px;
     border: 2px solid white;
     width: auto;
@@ -190,19 +235,28 @@ HD{
     margin-right: 0;
 }
 
+.heure{
+    font-size: 30px;
+}
+
 .Powered{
-    font-family: "Arial Black";
     color: white;
     margin: 10px;
+    margin-bottom: 100px;
+    font-size: small;
 }
 .Mentions{
-    font-family: "Arial Black";
     color: white;
     margin: 10px;
+    margin-bottom: 100px;
+    font-size: small;
 }
 
 footer{
     display:flex;
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     background-size: cover;
     background-color: #454545;
     margin:0;
@@ -215,9 +269,9 @@ footer{
     border-style: solid;   /* Style de la bordure  */
     border-width: 1px;   /* Epaisseur de la bordure  */
     border-color: #00c555;   /* Couleur de la bordure  */
-    padding: 5px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+    padding: 5px;
     width: 200px;   /* Permet d'ajuster la largeur du bouton à 100% */
-    box-sizing: border-box;   /* Important */
+    box-sizing: border-box;
     font-family: PT sans;   /* Police du texte */
     font-size: 13px;   /* Taille de la police du texte */
     letter-spacing: 2px;   /* Espacement des caractères */
@@ -241,7 +295,7 @@ footer{
 
 
 
-
+/* !!Permet de créer le boutton switch!!*/
 
 .switch {
     position: relative;
@@ -250,10 +304,8 @@ footer{
     height: 34px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {display:none;}
 
-/* The slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -292,7 +344,6 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
     border-radius: 32px;
 }

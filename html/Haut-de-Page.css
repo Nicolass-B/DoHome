@@ -1,22 +1,28 @@
 body {
     background-size: cover;
     background: url("../img/fond-decran-page2.jpg") fixed no-repeat center;
-    background-image:linear-gradient(to bottom right, #fdfffd, #797a7e);
+    background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
     margin:0;
+    height: auto;
+    width: 100%;
 }
 
 header{
     background-size: cover;
-    background-color: #1c4579;
+    background-color: #1b1b1b;
     width: 100%;
-    height: 100%;
+    height: 15%;
     display: flex;
-    justify-content: space-between;
 }
 
 D{
     display: flex;
-    justify-content: space-between;
+}
+
+
+.recherche{
+    display: flex;
+    margin-top: 8%;
 }
 
 ul{
@@ -26,7 +32,7 @@ ul{
 li{
     display: inline;
     padding: 6px;
-    border-left: 2px solid black;
+    border-left: 2px solid white;
 }
 
 li:first-child{
@@ -34,10 +40,13 @@ li:first-child{
 }
 
 nav{
-    font-family: "Cooper Black";
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: large;
+    font-size: 13px;
+    color: white;
 }
 
 .container{
@@ -50,17 +59,10 @@ nav{
     height: 20%;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+.information{
+    font-family: PT sans;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
 }
-
-.lettre{
-    width: 2.5%;
-    height: 2.5%;
-}
-
-
-
