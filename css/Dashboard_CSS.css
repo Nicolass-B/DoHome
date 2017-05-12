@@ -37,17 +37,22 @@ a:focus {
 
 .recherche{
     display: flex;
-    margin-top: 8%;
+    margin:auto;
+}
+section1{
+    display:flex;
 }
 
 ul{
     list-style: none;
 }
 
-li{
-    display: inline;
+.menu li{
     padding: 6px;
     border-left: 2px solid white;
+}
+.menu {
+    display:flex
 }
 
 li:first-child{
@@ -271,8 +276,7 @@ footer {
     background-size: cover;
     background-color: #454545;
     text-align: center;
-    margin-top:81px;
-
+    padding-bottom:70px;
 }
 .droite {
     position:relative;

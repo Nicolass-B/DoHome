@@ -33,14 +33,17 @@
 </header>
 
 <section>
+    <div class="information">
     <ul>
         <div class="menusec">
             <li class="enCours"><a href="monProfil.php">Mon profil</a></li>
             <li><a href="compteSec.php">Mes comptes secondaires</a></li>
         </div>
     </ul>
+    </div>
     <p>
     <div class="formulaire">
+        <div class="information">
         <ul>
             Nom
             <li><input type="text" name="pseudo" value="Nom" disabled="disabled"/></li>
@@ -59,6 +62,7 @@
 
 
         </ul>
+        </div>
     </div>
 
     </p>

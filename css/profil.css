@@ -43,7 +43,7 @@ section {
     width: 85%;
     border: 2px white solid;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0);
 
 }
 
@@ -66,13 +66,12 @@ ul {
 }
 
 .menu li {
-    display: inline;
     border-left: 2px solid white;
     padding: 6px;
 }
 
 .menusec li {
-    border-left: 2px solid black;
+    border-left: 2px solid white;
     padding: 6px;
 }
 
@@ -96,7 +95,7 @@ li:first-child {
 }
 
 .menusec a {
-    color: black;
+    color: white;
 }
 
 a:focus {
@@ -130,11 +129,45 @@ a:focus {
     margin-top: 40px;
     margin-left: 100px;
 
+
+}
+.placement #bouton1 {
+    width:auto;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
 }
 
 .placement .bouton2 {
     margin-top: 10px;
     margin-left: 100px;
+}
+.placement #bouton2 {
+    width:auto;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
+}
+#bouton3 {
+    width:auto;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
 }
 
 .placement .boutton {
@@ -142,7 +175,7 @@ a:focus {
 }
 
 .bouton3 {
-    margin-left: 80%;
+    margin-left: 70%;
     margin-bottom: 30px;
 }
 
@@ -189,6 +222,7 @@ footer {
     background-size: cover;
     background-color: #454545;
     text-align: center;
+    padding-bottom:70px;
 
 }
 .droite {

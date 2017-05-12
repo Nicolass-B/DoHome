@@ -25,14 +25,14 @@
             </div>
         </section>
 
-        <section>
+        <section1>
             <div class="recherche">
                 <form action="/search" id="searchthis" method="get">
                     <input id="search" name="q" type="text" placeholder="Rechercher"/>
                     <input id="search-btn" type="submit" value="Rechercher"/>
                 </form>
             </div>
-        </section>
+        </section1>
 
     </D>
 </header>
