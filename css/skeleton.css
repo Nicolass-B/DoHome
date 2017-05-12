@@ -127,7 +127,7 @@ html {
 body {
   width: 70%;
   height: 70%;
-  background: url("../img/fond decran page.jpg") fixed no-repeat;
+  background: url("../img/fond-decran-page.jpg") fixed no-repeat;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;

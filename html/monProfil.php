@@ -7,23 +7,35 @@
 </head>
 <body>
 <header>
-    <img class="imgpetite" src="logo.png" alt="DoHome"/>
-    <nav>
-        <ul>
-            <div class="menu">
-                <li>Dashboard</li>
-                <li>Mon profil</li>
-                <li>Ma maison</li>
-                <li>Boutique</li>
-            </div>
-        </ul>
-    </nav>
+    <section1>
+        <div class="container">
+            <img class="logo" src="fond_transparent3.png" alt="logo de l'entreprise"/>
+            <nav>
+                <ul>
+                    <div class="menu">
+                        <li><a href="Dashboard.php">Dashboard</a></li>
+                        <li class="enCours"><a href="monProfil.php">Mon profil</a></li>
+                        <li>Ma maison</li>
+                        <li>Boutique</li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </section1>
+    <section1>
+        <div class="recherche">
+            <form action="/search" id="searchthis" method="get">
+                <input id="search" name="q" type="text" placeholder="Rechercher"/>
+                <input id="search-btn" type="submit" value="Rechercher"/>
+            </form>
+        </div>
+    </section1>
 </header>
 
 <section>
     <ul>
         <div class="menusec">
-            <li id="enCours"><a href="monProfil.php">Mon profil</a></li>
+            <li class="enCours"><a href="monProfil.php">Mon profil</a></li>
             <li><a href="compteSec.php">Mes comptes secondaires</a></li>
         </div>
     </ul>
@@ -52,3 +64,12 @@
     </p>
 
 </section>
+</body>
+<footer>
+    <p>
+        <span class="centre">Powered By DoHome Enterprise™</span>
+        <span class="droite">Mentions Légales</span>
+    </p>
+
+</footer>
+</html>
