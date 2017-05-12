@@ -32,6 +32,7 @@
     </section1>
     <section1>
         <img class="mail" src="../img/email.png" alt="logo de l'email"/>
+        <img class="deconexion" src="../img/deconexion.png" alt="logo de la deco"/>
 
     </section1>
 </header>

@@ -293,6 +293,12 @@ footer {
     margin:auto;
     margin-left:200px;
 }
+.deconexion {
+    width:40px;
+    height:40px;
+    margin:auto;
+    margin-left:25px;
+}
 
 #searchthis #search-btn {
     background-color: #00c555;   /* Couleur de fond */
