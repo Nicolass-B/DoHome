@@ -14,8 +14,8 @@ function get_capteurs_piece(PDO $db,$IDpiece){
     return $reponse;
 }
 
-function get_piece_maison(PDO $db,$IDpiece){
-    $reponse = $db->query('SELECT ID FROM capteurs WHERE ID4="'.$IDpiece.'"');
+function get_piece_maison(PDO $db,$IDmaison){
+    $reponse = $db->query('SELECT ID_pièces FROM pieces WHERE ID4="'.$IDmaison.'"');
     return $reponse;
 }
 

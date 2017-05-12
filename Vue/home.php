@@ -49,7 +49,7 @@
 
 <section>
     <div class="connexion-inscription">
-     <form method="post" action="../controller/connexion.php">
+     <form method="POST" action="../controller/connexion.php?cible=verif">
 
        <input type="text" name="loginMail" " placeholder="Login" autofocus required/>
        <input type="password" name="pass"  placeholder="Mot de passe" required/>
