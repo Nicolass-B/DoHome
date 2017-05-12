@@ -9,7 +9,7 @@
 
 <header>
     <section1>
-        <img class="logo" src="fond_transparent3.png" alt="logo de l'entreprise"/>
+        <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise"/>
         <nav>
             <ul>
                 <div class="menu">
@@ -28,6 +28,11 @@
                 <input id="search-btn" type="submit" value="Rechercher"/>
             </form>
         </div>
+
+    </section1>
+    <section1>
+        <img class="mail" src="../img/email.png" alt="logo de l'email"/>
+
     </section1>
 </header>
 
@@ -42,7 +47,7 @@
         <p>
             <div class="placement">
                 <div class="imagepp">
-                    <img src="pp compte sec.png" alt="Photo de profil"/>
+                    <img src="../img/pp%20compte%20sec.png" alt="Photo de profil"/>
                 </div>
 
         <p>P + NOM</p>
@@ -63,7 +68,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="pp compte sec.png" alt="Photo de profil"/>
+                <img src="../img/pp%20compte%20sec.png" alt="Photo de profil"/>
             </div>
     <p>
         P + NOM
@@ -84,7 +89,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="pp compte sec.png" alt="Photo de profil"/>
+                <img src="../img/pp%20compte%20sec.png" alt="Photo de profil"/>
             </div>
     <p>P + NOM</p>
 

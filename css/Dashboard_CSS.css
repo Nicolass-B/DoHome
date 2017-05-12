@@ -287,6 +287,13 @@ footer {
     left:130%;
 }
 
+.mail {
+    width:50px;
+    height:30px;
+    margin:auto;
+    margin-left:200px;
+}
+
 #searchthis #search-btn {
     background-color: #00c555;   /* Couleur de fond */
     border-style: solid;   /* Style de la bordure  */

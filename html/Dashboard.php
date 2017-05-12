@@ -13,7 +13,7 @@
     <D>
         <section>
             <div class="container">
-                <img class="logo" src="fond_transparent3.png" alt="logo de l'entreprise">
+                <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise">
                 <nav>
                     <ul class="menu">
                         <li class="enCours"><a href="Dashboard.php">Dashboard</a></li>
@@ -32,6 +32,10 @@
                     <input id="search-btn" type="submit" value="Rechercher"/>
                 </form>
             </div>
+        </section1>
+        <section1>
+            <img class="mail" src="../img/email.png" alt="logo de l'email"/>
+
         </section1>
 
     </D>
