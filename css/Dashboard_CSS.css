@@ -280,11 +280,11 @@ footer {
 }
 .droite {
     position:relative;
-    left:960px;
+    left:200%;
 }
 .centre {
     position:relative;
-    left:620px;
+    left:130%;
 }
 
 #searchthis #search-btn {
