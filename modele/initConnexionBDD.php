@@ -6,19 +6,14 @@
  * Time: 11:44
  */
 
-$dsn = 'mysql:dbname=dohomebdd;port=3306;host=localhost';
+$dsn = 'mysql:dbname=appinfo;host=localhost';
 $user = 'root';
 $password = 'root';
-
-
 try{
     $dbh = new PDO($dsn, $user, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     echo "connection réussi";
-
 }
-
-
 catch(PDOException $e){
     die('Erreur : ' . $e->getMessage());
 }

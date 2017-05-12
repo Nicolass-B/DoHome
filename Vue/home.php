@@ -49,16 +49,21 @@
 
 <section>
     <div class="connexion-inscription">
-     <form method="post" action="connexion.php">
+     <form method="post" action="../controller/connexion.php">
 
-       <input type="text" name="pseudo" id="pseudo" placeholder="Login" autofocus required/>
-       <input type="password" name="pass" id="pass" placeholder="Mot de passe" required/>
-       <input type="submit" value="Se connecter" />
+       <input type="text" name="loginMail" " placeholder="Login" autofocus required/>
+       <input type="password" name="pass"  placeholder="Mot de passe" required/>
+       <input type="submit" name="envoi" value="Se connecter" />
+
+         <input type="checkbox" name="memo" id="memo"/>
+         <label for="memo">Se souvenir de moi</label>
          <p>
-             <input type="radio" name="memo" id="memo"/>
-             <label for="memo">Se souvenir de moi</label>
+             <a href="../Vue/signUp.php">S'inscrire</a>
+             <a href="">Mdp oublié ?</a>
          </p>
      </form>
+
+
     </div>
 </section>
 

@@ -5,17 +5,28 @@
  * Date: 05/05/2017
  * Time: 10:13
  */
-include 'init.php';
+require 'initConnexionBDD.php';
 
 // fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
-function mdp($dbh,$identifiant){
-    $reponse = $dbh->query('SELECT id, mdp FROM Utilisateurs WHERE identifiant='.$identifiant.'');
+function takeMdp(PDO $dbh,$login){
+    $reponse = $dbh->query('SELECT mot_de_passe FROM user WHERE Nom=\''.$login.'\'');
     return $reponse;
 }
 
 // fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
-function utilisateurs($dbh){
-    $reponse = $dbh->query('SELECT identifiant FROM Utilisateurs');
+function takeUtilisateurs(PDO $dbh,$login){
+    $reponse = $dbh->query('SELECT Mail FROM user WHERE Mail=\''.$login.'\'');
     return $reponse;
 }
 
+/*
+$rep=takeUtilisateurs($dbh,'test@test.Com');
+
+while ($donnees = $rep->fetch()) {
+    //On affiche les données dans le tableau
+    echo "</tr>";
+    echo "<td> $donnees[Mail] </td>";
+
+    echo "</tr>";
+}
+$rep->closeCursor();*/

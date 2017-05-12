@@ -9,21 +9,19 @@
 include 'init.php';
 
 // fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
-function get_capteurs_piece($db,$IDpiece){
+function get_capteurs_piece(PDO $db,$IDpiece){
     $reponse = $db->query('SELECT ID_Capteurs FROM capteurs WHERE ID4="'.$IDpiece.'"');
     return $reponse;
 }
 
-function get_piece_maison($db,$IDpiece){
+function get_piece_maison(PDO $db,$IDpiece){
     $reponse = $db->query('SELECT ID FROM capteurs WHERE ID4="'.$IDpiece.'"');
     return $reponse;
 }
 
 // fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
-function utilisateurs($db){
+function utilisateurs(PDO $db){
     $reponse = $db->query('SELECT Adresse FROM user');
     return $reponse;
 }
-
-
 ?>

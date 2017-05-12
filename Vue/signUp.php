@@ -48,7 +48,7 @@
             <input type="text" name="prenom" id="prenom" placeholder="Entrer vôtre prénom" required/>
             </br>
             <label for="E-mail">E-mail </br></label>
-            <input type="text" name="E-mail" id="E-mail" placeholder="Entrer vôtre adresse mail" required/>
+            <input type="email" name="E-mail" id="E-mail" placeholder="Entrer vôtre adresse mail" required/>
             </br>
             <label for="pass">Mot de passe </br></label>
             <input type="text" name="pass" id="pass" placeholder="Entrer vôtre mot de passe" required/>
@@ -101,7 +101,7 @@
 
             <p>
                 <label for="tel">Numéro de téléphone </br></label>
-                <input type="text" name="tel" id="tel" placeholder="Entrer vôtre numéro de téléphone" required/>
+                <input type="tel" name="tel" id="tel" placeholder="Entrer vôtre numéro de téléphone" required/>
             </p>
 
 
