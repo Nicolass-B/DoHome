@@ -1,6 +1,6 @@
 body {
     background-size: cover;
-    background: url("../img/fond-decran-page2.jpg") fixed no-repeat center;
+    background: url("../Vue/img/fond-decran-page2.jpg") fixed no-repeat center;
     background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
     margin:0;
     height: auto;

@@ -11,7 +11,7 @@
 <header>
     <div class="topPage">
         <logo>
-            <img class="logo"  src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
+            <img class="logo" src="img/fond_transparent.png" alt="logo de l'entreprise"/>
         </logo>
 
         <changeLangue>
@@ -49,9 +49,9 @@
 
 <section>
     <div class="connexion-inscription">
-     <form method="POST" action="../controller/connexion.php?cible=verif">
+     <form method="POST" action="../controller/traitementConnexion.php">
 
-       <input type="text" name="loginMail" " placeholder="Login" autofocus required/>
+       <input type="text" name="loginMail" " placeholder="Login"  required/>
        <input type="password" name="pass"  placeholder="Mot de passe" required/>
        <input type="submit" name="envoi" value="Se connecter" />
 
@@ -61,9 +61,8 @@
              <a href="../Vue/signUp.php">S'inscrire</a>
              <a href="">Mdp oublié ?</a>
          </p>
+
      </form>
-
-
     </div>
 </section>
 

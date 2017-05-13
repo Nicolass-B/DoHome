@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-    <img class="imgpetite" src="logo.png" alt="DoHome"/>
+    <img class="imgpetite" src="img/logo.png" alt="DoHome"/>
     <nav>
         <ul>
             <div class="menu">

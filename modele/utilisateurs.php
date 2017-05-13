@@ -15,8 +15,8 @@ function takeMdp(PDO $dbh,$login){
 
 // fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
 function takeUtilisateurs(PDO $dbh,$login){
-    $reponse = $dbh->query('SELECT Mail FROM user WHERE Mail=\''.$login.'\'');
-    $reponse = $reponse->fetch();
+    $reponse = $dbh->query('SELECT COUNT(mail) FROM user WHERE Mail=\''.$login.'\'');
+    $affiche= $reponse->fetch();
     return $reponse;
 }
 

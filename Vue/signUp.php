@@ -11,7 +11,7 @@
 <header>
     <div class="container1">
         <div>
-            <img class="logo" src="../img/fond_transparent.png" alt="logo de l'entreprise"/>
+            <img class="logo" src="img/fond_transparent.png" alt="logo de l'entreprise"/>
         </div>
 
 

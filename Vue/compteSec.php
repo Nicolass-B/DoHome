@@ -8,7 +8,7 @@
 <body>
 
 <header>
-    <img class="imgpetite" src="logo.png" alt="DoHome"/>
+    <img class="imgpetite" src="img/logo.png" alt="DoHome"/>
     <nav>
         <ul>
             <div class="menu">
@@ -33,7 +33,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="pp compte sec.png" alt="Photo de profil"/>
+                <img src="img/pp compte sec.png" alt="Photo de profil"/>
             </div>
 
     <p>P + NOM</p>
@@ -54,7 +54,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="pp compte sec.png" alt="Photo de profil"/>
+                <img src="img/pp compte sec.png" alt="Photo de profil"/>
             </div>
     <p>
         P + NOM
@@ -75,7 +75,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="pp compte sec.png" alt="Photo de profil"/>
+                <img src="img/pp compte sec.png" alt="Photo de profil"/>
             </div>
     <p>P + NOM</p>
 

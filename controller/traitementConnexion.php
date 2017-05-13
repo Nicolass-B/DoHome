@@ -10,3 +10,12 @@
 la fonction empty Détermine si une variable est considérée comme vide.
 Une variable est considérée comme vide si elle n'existe pas, ou si sa valeur équivaut à FALSE
  */
+
+
+
+var_dump($_POST);
+
+$testenvoi=htmlspecialchars($_POST["loginMail"]);
+$testenvoi2=htmlspecialchars($_POST["pass"]);
+echo $testenvoi;
+echo $testenvoi2;

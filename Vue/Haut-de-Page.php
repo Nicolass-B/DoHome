@@ -2,7 +2,7 @@
 <html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link rel="stylesheet" href="../css/Haut-de-Page.css.css"/>
+    <link rel="stylesheet" href="../css/Haut-de-Page.css"/>
     <meta charset="UTF-8">
     <title>Nom de la page</title>
 </head>
@@ -13,7 +13,7 @@
     <D>
         <section>
             <div class="container">
-                <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise">
+                <img class="logo" src="../Vue/img/fond_transparent.png" alt="logo de l'entreprise">
                 <nav>
                     <ul class="menu">
                         <li>Dashboard</li>
@@ -27,7 +27,7 @@
 
         <section>
             <div class="recherche">
-                <form action="/search" id="searchthis" method="get">
+                <form action="search" id="searchthis" method="get">
                     <input id="search" name="q" type="text" placeholder="Rechercher" />
                     <input id="search-btn" type="submit" value="Rechercher" />
                 </form>

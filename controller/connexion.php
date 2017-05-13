@@ -7,7 +7,8 @@
  */
     // Controleur pour gérer le formulaire de connexion des utilisateurs
 require_once ('../Vue/home.php');
-    // L'utilisateur vient de valider le formulaire de connexion
+
+
         if(!empty($_POST['loginMail']) && !empty($_POST['pass'])){ // L'utilisateur a rempli tous les champs du formulaire
             include("../Modele/utilisateurs.php");
 
@@ -16,7 +17,7 @@ require_once ('../Vue/home.php');
             $reponse = takeMdp($dbh,$loginSaisi);
             $reponse2=takeUtilisateurs($dbh,$loginSaisi);
 
-            if($reponse2!=$loginSaisi){  // L'utilisateur n'a pas été trouvé dans la base de données
+            if($reponse2!==$loginSaisi){  // L'utilisateur n'a pas été trouvé dans la base de données
                 $erreur = "Utilisateur inconnu";
                 echo "utilisateur pas trouvé";
                 include("../Vue/");
@@ -35,7 +36,6 @@ require_once ('../Vue/home.php');
         }
         else { // L'utilisateur n'a pas rempli tous les champs du formulaire
             echo "tout les champ ne sont pas rempli";
-            $erreur = "Veuillez remplir tous les champs";
-            include("Vue/connexion_erreur.php");
+            //include("Vue/connexion_erreur.php");
         }
-
+?>
