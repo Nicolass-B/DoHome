@@ -8,13 +8,13 @@
     <D>
         <section>
             <div class="container">
-                <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise">
+                <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise">
                 <nav>
                     <ul class="menu">
-                        <li>Dashboard</li>
-                        <li>Mon profil</li>
-                        <li> <span id="maison"> Ma maison </span></li>
-                        <li>Boutique</li>
+                        <li><a href="Dashboard.php">Dashboard</a></li>
+                        <li><a href="monProfil.php">Mon profil</a></li>
+                        <li class="enCours"><a href="Maison.php">Ma maison</a></li>
+                        <li><a href="Boutique.html">Boutique</a></li>
                     </ul>
                 </nav>
             </div>
@@ -68,15 +68,11 @@
 
     <section4>
 
-        <img class="logo2" src="../img/plus4.png" alt="plus">
+        <img class="logo2" src="../Vue/img/plus4.png" alt="plus">
 <div class="ajout"> Ajoutez une pièce </div>
-        <img class="logo3" src="../img/less1.png" alt="plus">
+        <img class="logo3" src="../Vue/img/less1.png" alt="plus">
 
     </section4>
-
-
-
-
 </x>
 </body>
 <footer>
