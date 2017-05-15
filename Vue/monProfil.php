@@ -9,7 +9,7 @@
 <header>
     <section1>
         <div class="container">
-            <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise"/>
+            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
             <nav>
                 <ul>
                     <div class="menu">
@@ -31,8 +31,8 @@
         </div>
     </section1>
     <section1>
-        <img class="mail" src="../img/email.png" alt="logo de l'email"/>
-        <img class="deconexion" src="../img/deconexion.png" alt="logo de la deco"/>
+        <img class="mail" src="../Vue/img/email.png" alt="logo de l'email"/>
+        <a class="LienImage" href="home.php"><img  class="deconexion" src="../Vue/img/deconexion.png" alt="logo de la deco"/></>
 
     </section1>
 </header>
@@ -55,15 +55,15 @@
             Prénom
             <li><input type="text" name="pseudo" value="Prénom" disabled="disabled"/></li>
             E-mail
-            <li><input type="text" name="pseudo" value="adresse mail"/></li>
+            <li><input type="text" name="pseudo" value="Adresse mail"/></li>
             Mot de passe
             <li><input type="text" name="pseudo" value="********" disabled="disabled"/></li>
             Adresse
-            <li><input type="text" name="pseudo" value="adresse mail"/></li>
+            <li><input type="text" name="pseudo" value="Adresse"/></li>
             Date de naissance
-            <li><input type="date"/></li>
+            <li><input type="date" value="JJ/MM/AAAA"/></li>
             Numéro de téléphone
-            <li><input type="text" name="pseudo" value="numéro"/></li>
+            <li><input type="text" name="pseudo" value="Numéro"/></li>
 
 
         </ul>
