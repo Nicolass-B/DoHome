@@ -5,7 +5,25 @@
  * Date: 05/05/2017
  * Time: 10:13
  */
-include 'initConnexionBDD.php';
+require 'initConnexionBDD.php';
+
+// vérif mdp dans BDD
+function takeMdp(PDO $dbh,$login){
+    $reponse = $dbh->query('SELECT mot_de_passe FROM user  WHERE Mail=\''.$login.'\'');
+    $affiche= $reponse->fetch();
+    return $affiche;
+}
+
+// vérif user
+function takeUtilisateurs(PDO $dbh,$login){
+    $reponse = $dbh->query('SELECT COUNT(mail) as nb_ocu FROM user WHERE Mail=\''.$login.'\'');
+    $affiche= $reponse->fetch();
+    return $affiche;
+}
+
+/*
+$rep=takeMdp($dbh,'test@test.Com');
+var_dump($rep);
 
 function connectUser(PDO $db, $email, $mot_de_passe)
 {
@@ -37,9 +55,4 @@ function createUser(PDO $bdd, $utilisateur)
 
     return ($id_client);
 
-}
-
-
-
-$test= connectUser($dbh,'test@test.Com', 'azerty' );
-var_dump($test);
+}*/

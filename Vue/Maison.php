@@ -14,7 +14,7 @@
                         <li><a href="Dashboard.php">Dashboard</a></li>
                         <li><a href="monProfil.php">Mon profil</a></li>
                         <li class="enCours"><a href="Maison.php">Ma maison</a></li>
-                        <li><a href="Boutique.html">Boutique</a></li>
+                        <li><a href="Boutique.php">Boutique</a></li>
                     </ul>
                 </nav>
             </div>

@@ -16,7 +16,7 @@
                         <li><a href="Dashboard.php">Dashboard</a></li>
                         <li class="enCours"><a href="monProfil.php">Mon profil</a></li>
                         <li><a href="Maison.php">Ma maison</a></li>
-                        <li><a href="Boutique.html">Boutique</a></li>
+                        <li><a href="Boutique.php">Boutique</a></li>
                     </div>
                 </ul>
             </nav>
@@ -31,8 +31,8 @@
         </div>
     </section1>
     <section1>
-        <img class="mail" src="../Vue/img/email.png" alt="logo de l'email"/>
-        <a class="LienImage" href="home.php"><img  class="deconexion" src="../Vue/img/deconexion.png" alt="logo de la deco"/></>
+        <img class="mail" src="img/icon_email.png" alt="logo de l'email"/>
+        <a class="LienImage" href="home.php"><img class="deconexion" src="img/icon_deconnexion.png" alt="logo de la deco"/></>
 
     </section1>
 </header>
