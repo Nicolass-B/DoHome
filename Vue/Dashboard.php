@@ -18,8 +18,8 @@
                     <ul class="menu">
                         <li class="enCours"><a href="Dashboard.php">Dashboard</a></li>
                         <li><a href="monProfil.php">Mon profil</a></li>
-                        <li>Ma maison</li>
-                        <li>Boutique</li>
+                        <li><a href="Maison.php">Ma maison</a></li>
+                        <li><a href="Boutique.html">Boutique</a></li>
                     </ul>
                 </nav>
             </div>

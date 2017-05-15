@@ -19,6 +19,11 @@ D{
     display: flex;
 }
 
+.enCours a {
+    text-decoration: none;
+    color:#00c555;
+}
+
 
 .recherche{
     display: flex;
