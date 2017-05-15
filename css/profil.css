@@ -238,11 +238,11 @@ footer {
      width:50px;
      height:30px;
      margin:auto;
-     margin-left:200px;
+     margin-left:200%;
  }
 .deconexion {
     width:40px;
     height:40px;
     margin:auto;
-    margin-left:25px;
+    margin-left:30%;
 }
