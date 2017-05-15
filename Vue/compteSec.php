@@ -9,7 +9,7 @@
 
 <header>
     <section1>
-        <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise"/>
+        <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
         <nav>
             <ul>
                 <div class="menu">
@@ -31,8 +31,8 @@
 
     </section1>
     <section1>
-        <img class="mail" src="../img/email.png" alt="logo de l'email"/>
-        <img class="deconexion" src="../img/deconexion.png" alt="logo de la deco"/>
+        <img class="mail" src="../Vue/img/email.png" alt="logo de l'email"/>
+        <img class="deconexion" src="../Vue/img/deconexion.png" alt="logo de la deco"/>
 
     </section1>
 </header>
@@ -48,7 +48,7 @@
         <p>
             <div class="placement">
                 <div class="imagepp">
-                    <img src="../img/pp%20compte%20sec.png" alt="Photo de profil"/>
+                    <img src="../Vue/img/pp%20compte%20sec.png" alt="Photo de profil"/>
                 </div>
 
         <p>P + NOM</p>
@@ -69,7 +69,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="../img/pp%20compte%20sec.png" alt="Photo de profil"/>
+                <img src="../Vue/img/pp%20compte%20sec.png" alt="Photo de profil"/>
             </div>
     <p>
         P + NOM
@@ -90,7 +90,7 @@
     <p>
         <div class="placement">
             <div class="imagepp">
-                <img src="../img/pp%20compte%20sec.png" alt="Photo de profil"/>
+                <img src="../Vue/img/pp%20compte%20sec.png" alt="Photo de profil"/>
             </div>
     <p>P + NOM</p>
 

@@ -13,7 +13,7 @@
     <D>
         <section>
             <div class="container">
-                <img class="logo" src="../img/fond_transparent3.png" alt="logo de l'entreprise">
+                <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise">
                 <nav>
                     <ul class="menu">
                         <li class="enCours"><a href="Dashboard.php">Dashboard</a></li>
@@ -34,8 +34,8 @@
             </div>
         </section1>
         <section1>
-            <img class="mail" src="../img/email.png" alt="logo de l'email"/>
-            <img class="deconexion" src="../img/deconexion.png" alt="logo de la deco"/>
+            <img class="mail" src="../Vue/img/email.png" alt="logo de l'email"/>
+            <img class="deconexion" src="../Vue/img/deconexion.png" alt="logo de la deco"/>
 
         </section1>
 
