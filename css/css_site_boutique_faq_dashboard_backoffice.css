@@ -1,0 +1,78 @@
+nav
+{
+  padding: 0; margin:0;
+  text-align: left;
+}
+nav li
+{
+  display: inline;
+  list-style: none;
+}
+
+nav a
+{
+  display: inline-block;
+  margin: 0 20px;
+}
+body
+{
+  background-image: url("fond decran page.jpg");
+}
+div{
+  background-image: url("fond_transparant.png");
+  position: fixed;
+}
+p
+{
+  font-size: 115%;
+  margin-left: 20px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 1;
+}
+li
+{
+  font-size: 120%;
+  color: white;
+}
+aside
+{
+  margin-left: 500px;
+  color: white;
+  font-size: 150%;
+
+
+}
+article
+{
+  margin-left: 50px;
+  width: 1000px;
+  border: 1px solid black;
+
+
+}
+footer
+{
+  color: white;
+  margin-left: 400px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+j{
+  margin-left: 50px;
+
+}
+c{
+  margin-left: 100px;
+}
+d{
+  margin-left: 150px;
+}
+z{
+    margin-left: 500px;
+}
