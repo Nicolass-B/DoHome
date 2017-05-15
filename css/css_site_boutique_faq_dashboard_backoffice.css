@@ -50,8 +50,13 @@ article
   width: 1000px;
   border: 1px solid black;
 
-
 }
+
+.enCours a {
+  text-decoration: none;
+  color:#00c555;
+}
+
 footer
 {
   color: white;
