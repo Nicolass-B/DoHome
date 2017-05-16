@@ -5,19 +5,19 @@
  * Date: 05/05/2017
  * Time: 10:12
  */
-require_once ("init.php");
+require_once ("initConnexionBDD.php");
 class capteur
 {
 
     private $idcapteur;
     private $idpiece;
     private $idmaison;
-    private $user;
+    private $id_user;
 
-    private $type;
+    private $typecapteur;
     private $valeur_now;
 
-    private $pdo;
+    private $pdo; // pour les acces de l'objet a la base de données
 
 
     /**
@@ -29,16 +29,18 @@ class capteur
     {
         $this->idcapteur = $idcapteur;
         $this->pdo = $db;
-        $this->get_capteurs_piece($this->idcapteur);
+        $this->get_piece_and_maison($this->idcapteur);
     }
 
 
 // fonction qui cherche les capteurs pour une pièce donnée
 
     /**
+     * A partir de l'ID du capteur, indique l'IDpièce et celui de la maison
+     * permet de peupler des variables pour des cas futurs
      * @param $IDcapteur
      */
-    public function get_capteurs_piece($IDcapteur)
+    private function get_piece_and_maison($IDcapteur)
     {
 
         $req = $this->pdo->prepare('SELECT ID_piece FROM capteurs WHERE ID_Capteurs=:idcapteur');
@@ -53,7 +55,7 @@ class capteur
     /**
      * permet de récupérer la valeur instantannée du capteur et son type depuis la DB
      */
-    private function get_valeur(){
+    public function get_valeur(){
         $req = $this->pdo->prepare('SELECT Valeur FROM capteurs WHERE ID_Capteurs=:idcapteur');
         $req->bindParam(':idcapteur', $this->idcapteur);
         $req->execute();
@@ -61,7 +63,17 @@ class capteur
         $req = $this->pdo->prepare('SELECT Type FROM capteurs WHERE ID_Capteurs=:idcapteur');
         $req->bindParam(':idcapteur', $this->idcapteur);
         $req->execute();
-        $this->type = $req->fetch();
+        $this->typecapteur = $req->fetch();
     }
+
+    public function get_valeur_history(){
+        $req = $this->pdo->prepare('SELECT Valeur FROM historique_capteurs WHERE ID_Capteurs=:idcapteur ORDER BY Date_Mesure');
+        $req->execute(':idcapteur', $this->idcapteur);
+
+        return $req;
+    }
+
+
+
 }
 ?>
