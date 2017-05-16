@@ -8,11 +8,11 @@
 
 $dsn = 'mysql:dbname=appinfo;host=localhost';
 $user = 'root';
-$password = 'root';
+$password = '';
 try{
     $dbh = new PDO($dsn, $user, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    echo "connection réussi";
+
 }
 catch(PDOException $e){
     die('Erreur : ' . $e->getMessage());

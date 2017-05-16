@@ -11,7 +11,7 @@
 <header>
     <div class="topPage">
         <logo>
-            <img class="logo" src="img/fond_transparent.png" alt="logo de l'entreprise"/>
+            <img class="logo" src="img/fond_transparent3.png" alt="logo de l'entreprise"/>
         </logo>
 
         <changeLangue>
@@ -25,9 +25,8 @@
 </header>
 
 <div class="corpPage">
-<section>
     <div class="textIntro">
-        <p>
+
             l'approche sociale dans notre pays encourage la diversité
             et la sensibilité d'un mouvement cheminant vers plus d'unité.
             En effet, c'est en toute prescience que je peux garantir
@@ -43,11 +42,9 @@
             indispensables préalablement établies afin de poursuivre
             l'effort plus que légitime d'une majorité parlementaire
             qui responsabiliserait sur l'urgence écologique.
-        </p>
-    </div>
-</section>
 
-<section>
+    </div>
+
     <div class="connexion-inscription">
      <form method="POST" action="../controller/traitementConnexion.php">
 
@@ -58,21 +55,21 @@
          <input type="checkbox" name="memo" id="memo"/>
          <label for="memo">Se souvenir de moi</label>
          <p>
-             <a href="../Vue/signUp.php">S'inscrire</a>
-             <a href="">Mdp oublié ?</a>
+             <a id="t"  href="../Vue/signUp.php">S'inscrire</a>
+             <a id="t" href="">Mdp oublié ?</a>
          </p>
 
      </form>
     </div>
-</section>
 
 </div>
 
 <footer>
-    <div class="piedPage">
-        <div class="powered">Powered By DoHome Enterprise™ + ♥ from Paris</div>
-        <div class="legalMention">Mentions Légales</div>
-    </div>
+    <p>
+        <span class="centre">Powered By DoHome Enterprise™</span>
+        <span class="droite">Mentions Légales</span>
+    </p>
+
 </footer>
 
 

@@ -1,11 +1,32 @@
 html {
     font-size: 62.5%;
 }
+
+header{
+    background-size: cover;
+    background-color: #1b1b1b;
+    margin: 0;
+    height:25%;
+
+}
 body {
-    background: url("../Vue/img/background.jpg") fixed no-repeat ;
-    background-size: cover ;
-    margin: auto;
-    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    background-size: cover;
+    background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
+    margin: 0;
+    height:50%;
+}
+footer {
+    display: flex;
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
+    margin: 0px;
+    background-size: cover;
+    background-color: #454545;
+    text-align: center;
+    padding-bottom:70px;
 }
 
 
@@ -35,11 +56,13 @@ li{
 }
 
 
-
-
 .corpPage{
     display: flex;
+}
 
+
+.conteneur{
+    display: flex;
     flex-direction: row;/*organisés sur une ligne*/
     justify-content: space-between;/* éléments sont étirés sur tout l'axe*/
     align-items: center;/*alignés au centre*/
@@ -49,7 +72,7 @@ li{
     opacity: 0.7;
     border: 1px solid black;
     color: black;
-    margin: 30px;
+    margin: 50px;
     padding: 15px;
     width: auto;
     text-align: justify;
@@ -58,12 +81,13 @@ li{
 }
 
 .connexion-inscription{
-    display: inline-flex;
     width: 300px;
     height: 200px;
     background-color: white;
     opacity: 0.7;
     border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
     color : black;
     font-weight: bold;
     margin-right: 30px;
@@ -73,42 +97,40 @@ input[type=text]{
     width: 230px;
     height: 25px;
     font-size: 150%;
+    margin-left: 35px;
+    margin-top: 20px;
+
+
 }
 input[type=password]{
     width: 230px;
     height: 25px;
     font-size: 150%;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
 }
 input[type=submit] {
-    width: 150px;
+    width: 120px;
     height: 25px;
-    margin: 10px;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-top: 10px;
+
+}
+
+
+#t{
+    margin-left: 35px;
+    font-size: 150%;
 }
 
 
-
-
-
-
-
-
-.piedPage{
-    flex-direction: row;
-    background-color: brown;
-    color : white;
-
+.droite {
+    position:relative;
+    left:195%;
 }
-.powered{
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    right: 0px;
-    bottom: 0px;
-
-}
-.legalMention{
-
-    display: inline-block;
-    vertical-align: top;
-
+.centre {
+    position:relative;
+    left:130%;
 }
