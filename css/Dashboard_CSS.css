@@ -27,7 +27,10 @@ footer {
     text-align: center;
     padding-bottom:70px;
 }
-
+.lienImage {
+    margin-top:auto;
+    margin-bottom:auto;
+}
 D{
     display: flex;
 }

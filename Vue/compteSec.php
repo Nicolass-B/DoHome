@@ -31,8 +31,9 @@
 
     </section1>
     <section1>
-        <img class="mail" src="img/icon_email.png" alt="logo de l'email"/>
-        <img class="deconexion" src="img/icon_deconnexion.png" alt="logo de la deco"/>
+        <img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
+        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png"
+                                                  alt="logo de la deco"/></>
 
     </section1>
 </header>
@@ -41,8 +42,8 @@
     <div class="information">
         <ul>
             <div class="menusec">
-                <li ><a id="bordureD" href="monProfil.php">Mon profil</a></li>
-                <li class="enCours" ><a id="" href="compteSec.php">Mes comptes secondaires</a></li>
+                <li><a href="monProfil.php">Mon profil</a></li>
+                <li class="enCours"><a href="compteSec.php">Mes comptes secondaires</a></li>
             </div>
         </ul>
         <p>
@@ -96,7 +97,7 @@
 
     <div class="boutton">
         <div class="bouton1">
-            <input type="button" value="Modifier les accès du compte secondaire" href="lien" id ="bouton1"/>
+            <input type="button" value="Modifier les accès du compte secondaire" href="lien" id="bouton1"/>
         </div>
         <div class="bouton2">
             <input type="button" value="Supprimer le compte secondaire" href="lien" id="bouton2"/>
@@ -112,4 +113,12 @@
 </section>
 
 </body>
+<footer>
+    <p>
+        <span class="centre">Powered By DoHome Enterprise™</span>
+        <span class="droite">Mentions Légales</span>
+    </p>
+
+
+</footer>
 </html>

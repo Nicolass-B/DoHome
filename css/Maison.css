@@ -14,7 +14,10 @@ header{
     display: flex;
     margin:0;
 }
-
+.LienImage {
+    margin-bottom: auto;
+    margin-top: auto;
+}
 D{
     display: flex;
 }
