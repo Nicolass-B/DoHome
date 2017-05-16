@@ -32,7 +32,7 @@
     </section1>
     <section1>
         <img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
-        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></>
+        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
 
     </section1>
 </header>
