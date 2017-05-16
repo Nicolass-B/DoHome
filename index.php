@@ -9,11 +9,11 @@ if (isset($_GET['home']))
 {
     if ($_GET['home'] == "form")
     {
-        include ("controller/inscription.php");
+        include("controller/traitementInscription.php");
     }
     else if ($_GET['inscription'] == "verif")
     {
-        include ("controller/inscription.php");
+        include("controller/traitementInscription.php");
     }
 }
 else if (!isset($_SESSION["id_client"]))

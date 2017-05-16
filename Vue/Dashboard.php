@@ -16,10 +16,10 @@
                 <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise">
                 <nav>
                     <ul class="menu">
-                        <li class="enCours"><a href="Dashboard.php">Dashboard</a></li>
-                        <li><a href="monProfil.php">Mon profil</a></li>
-                        <li><a href="Maison.php">Ma maison</a></li>
-                        <li><a href="Boutique.php">Boutique</a></li>
+                        <li class="enCours"><a href="../Vue/Dashboard.php">Dashboard</a></li>
+                        <li><a href="../Vue/monProfil.php">Mon profil</a></li>
+                        <li><a href="../Vue/Maison.php">Ma maison</a></li>
+                        <li><a href="../Vue/Boutique.php">Boutique</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,8 +34,8 @@
             </div>
         </section1>
         <section1>
-            <img class="mail" src="img/icon_email.png" alt="logo de l'email"/>
-            <img class="deconexion" src="img/icon_deconnexion.png" alt="logo de la deco"/>
+            <img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
+            <img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/>
 
         </section1>
 

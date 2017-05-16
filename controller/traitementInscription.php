@@ -6,7 +6,13 @@
  * Time: 10:01
  */
 
-    $titre="inscription";
+
+
+
+
+
+
+/*    $titre="inscription";
     require_once("views/signUp.php");
 
     if (isset($_POST['email']))
@@ -87,6 +93,3 @@
     }
     else
         echo (inscriptionForm());
-
-
-?>

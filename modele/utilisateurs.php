@@ -21,6 +21,15 @@ function takeUtilisateurs(PDO $dbh,$login){
     return $affiche;
 }
 
+
+
+
+
+
+
+
+
+
 /*
 $rep=takeMdp($dbh,'test@test.Com');
 var_dump($rep);

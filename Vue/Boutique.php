@@ -24,6 +24,9 @@
         Les produits conseillés
       </article>
     </body>
+
+
+
     <footer>
       <h5>Powered By DoHome Entreprise™+ from Paris
       Mentions Légales</h5>

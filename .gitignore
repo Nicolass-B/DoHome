@@ -57,3 +57,12 @@ fabric.properties
 .idea/modules.xml
 .idea/php.xml
 DoHome/
+.idea/copyright/
+.idea/cssxfire.xml
+.idea/dataSources/
+.idea/deployment.xml
+.idea/dohome.iml
+.idea/encodings.xml
+.idea/sqldialects.xml
+.idea/webServers.xml
+local_history.patch
