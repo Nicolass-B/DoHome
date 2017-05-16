@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="../css/Maison.css"/>
 </head>
 <body>
-<<header>
-    <section1>
-        <div class="container">
-            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
-            <nav>
-                <ul>
-                    <div class="menu">
-                        <li><a href="Dashboard.php">Dashboard</a></li>
-                        <li class="enCours"><a href="monProfil.php">Mon profil</a></li>
-                        <li><a href="Maison.php">Ma maison</a></li>
-                        <li><a href="Boutique.php">Boutique</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </section1>
-    <section1>
-        <div class="recherche">
-            <form action="/search" id="searchthis" method="get">
-                <input id="search" name="q" type="text" placeholder="Rechercher"/>
-                <input id="search-btn" type="submit" value="Rechercher"/>
-            </form>
-        </div>
-    </section1>
-    <section1>
-        <img class="mail" src="img/icon_email.png" alt="logo de l'email"/>
-        <a class="LienImage" href="home.php"><img class="deconexion" src="img/icon_deconnexion.png" alt="logo de la deco"/></>
+<header>
+    <D>
+        <section>
+            <div class="container">
+                <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="../Vue/Dashboard.php">Dashboard</a></li>
+                        <li><a href="../Vue/monProfil.php">Mon profil</a></li>
+                        <li class="enCours"><a href="../Vue/Maison.php">Ma maison</a></li>
+                        <li><a href="../Vue/Boutique.php">Boutique</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
-    </section1>
+        <section1>
+            <div class="recherche">
+                <form action="/search" id="searchthis" method="get">
+                    <input id="search" name="q" type="text" placeholder="Rechercher"/>
+                    <input id="search-btn" type="submit" value="Rechercher"/>
+                </form>
+            </div>
+        </section1>
+        <section1>
+            <img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
+            <img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/>
+
+        </section1>
+
+    </D>
 </header>
 
 
@@ -81,8 +83,13 @@
     </section4>
 </x>
 </body>
+
+
+
 <footer>
-    <div class="Powered">Powered By DoHome Enterprise™</div>
-    <div class="Mentions">Mentions Légales</div>
+    <p>
+        <span class="centre">Powered By DoHome Enterprise™</span>
+        <span class="droite">Mentions Légales</span>
+    </p>
 </footer>
 </html>

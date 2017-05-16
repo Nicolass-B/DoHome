@@ -34,8 +34,8 @@
             </div>
         </section1>
         <section1>
-            <img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
-            <img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/>
+            <img  class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
+           <a id="test" href="../Vue/home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
 
         </section1>
 

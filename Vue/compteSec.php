@@ -41,8 +41,8 @@
     <div class="information">
         <ul>
             <div class="menusec">
-                <li><a href="monProfil.php">Mon profil</a></li>
-                <li class="enCours"><a href="compteSec.php">Mes comptes secondaires</a></li>
+                <li ><a id="bordureD" href="monProfil.php">Mon profil</a></li>
+                <li class="enCours" ><a id="" href="compteSec.php">Mes comptes secondaires</a></li>
             </div>
         </ul>
         <p>
