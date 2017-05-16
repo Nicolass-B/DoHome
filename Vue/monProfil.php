@@ -38,7 +38,6 @@
 </header>
 
 <section>
-    <p>
     <div class="information">
         <ul>
             <div class="menusec">
@@ -47,7 +46,6 @@
             </div>
         </ul>
     </div>
-    </p>
     <p>
     <div class="formulaire">
         <div class="information">
