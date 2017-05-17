@@ -23,7 +23,7 @@
 
 <section>
     <div class="information">
-        <form method="post" action="inscription.php">
+        <form method="post" action="../controller/traitementInscription.php">
             <fieldset>
                 <legend>Inscription</legend>
                 <div class="test">
@@ -105,7 +105,7 @@
                             <label for="memo">J'ai lu et j'accepte les conditions d'utilisation</label>
                          </p>
 
-                        <input class="bouton1" type="submit" value="Créer mon compte" />
+                        <input class="bouton1" type="submit" name="envoi" value="Créer mon compte" />
                     </div>
                 </div>
             </fieldset>

@@ -8,10 +8,12 @@
 /*étape 1 verif envoi formulaire
  *étape 2 verif des champs
  *étape 3 verif mdp et mdp confirmation
- *étape 4 vérif dans bdd
+ *étape 4 vérif dans bdd si le mail est bien unique
+ *étape 5 insert les données du formulaire dans la BDD
  * */
 
 if(isset($_POST['envoi'])){//envoi du formulaire
+
     //htmlentities améliore la sécurité(évite les injections xss)
     $nom=htmlentities($_POST['nom']);
     $prenom=htmlentities($_POST['prenom']);
@@ -21,7 +23,31 @@ if(isset($_POST['envoi'])){//envoi du formulaire
     $adresse=htmlentities($_POST['adresse']);
     $tel=htmlentities($_POST['tel']);
 
+    if(!empty($nom)//vérifie si tout les champs sont bien rempli
+        &&!empty($prenom)
+        &&!empty($mail)
+        &&!empty($pass)
+        &&!empty($confirmePasse)
+        &&!empty($adresse)
+        &&!empty($tel)) {
+        require ('../modele/Inscription.php');
+        if(verif2MDP($pass,$confirmePasse)){
+            if(verifMail($dbh,$mail)==false){
+                insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse,4);
+                echo 'inscription réussi';
+            }
 
+            else {
+                echo 'le mail est déja utilisé';
+            }
+        }
+        else{
+            echo 'mdp différent';
+        }
+    }
+    else {
+        echo 'les champs ne sont pas tous rempli';
+    }
 
 }
 else{
@@ -114,3 +140,4 @@ else{
     }
     else
         echo (inscriptionForm());
+*/
