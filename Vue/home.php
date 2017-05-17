@@ -48,7 +48,7 @@
     <div class="connexion-inscription">
      <form method="POST" action="../controller/traitementConnexion.php">
 
-       <input type="text" name="loginMail" " placeholder="Login"  required/>
+       <input type="text" name="loginMail"  placeholder="Login"  required/>
        <input type="password" name="pass"  placeholder="Mot de passe" required/>
        <input type="submit" name="envoi" value="Se connecter" />
 
