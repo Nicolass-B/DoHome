@@ -9,14 +9,16 @@ require 'initConnexionBDD.php';
 
 // vérif mdp dans BDD
 function takeMdp(PDO $dbh,$login){
-    $reponse = $dbh->query('SELECT mot_de_passe FROM user  WHERE Mail=\''.$login.'\'');
+    $reponse = $dbh->prepare('SELECT mot_de_passe FROM user  WHERE Mail=\''.$login.'\'');
+    $reponse->execute();
     $affiche= $reponse->fetch();
     return $affiche;
 }
 
 // vérif user
 function takeUtilisateurs(PDO $dbh,$login){
-    $reponse = $dbh->query('SELECT COUNT(mail) as nb_ocu FROM user WHERE Mail=\''.$login.'\'');
+    $reponse = $dbh->prepare('SELECT COUNT(mail) as nb_ocu FROM user WHERE Mail=\''.$login.'\'');
+    $reponse->execute();
     $affiche= $reponse->fetch();
     return $affiche;
 }

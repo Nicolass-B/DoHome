@@ -5,7 +5,28 @@
  * Date: 09/05/2017
  * Time: 10:01
  */
+/*étape 1 verif envoi formulaire
+ *étape 2 verif des champs
+ *étape 3 verif mdp et mdp confirmation
+ *étape 4 vérif dans bdd
+ * */
 
+if(isset($_POST['envoi'])){//envoi du formulaire
+    //htmlentities améliore la sécurité(évite les injections xss)
+    $nom=htmlentities($_POST['nom']);
+    $prenom=htmlentities($_POST['prenom']);
+    $mail=htmlentities($_POST['E-mail']);
+    $pass=htmlentities($_POST['pass']);
+    $confirmePasse=htmlentities($_POST['confirmePasse']);
+    $adresse=htmlentities($_POST['adresse']);
+    $tel=htmlentities($_POST['tel']);
+
+
+
+}
+else{
+    echo 'formulaire non envoier';
+}
 
 
 
