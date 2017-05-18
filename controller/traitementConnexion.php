@@ -16,13 +16,14 @@ if(isset($_POST['envoi'])) { // L'utilisateur vient de valider le formulaire de 
 
         $repUtilisateur=takeUtilisateurs($dbh,$_POST['loginMail']);
         if($repUtilisateur['nb_ocu']==0){//utilisateur non trouvé dans la base de donnée
-            echo 'utilisateur non trouvé';
-            include ('../Vue/erreur_connexion.php');
+            $messageErreur= 'utilisateur non trouvé';
+            include ('../Vue/home.php');
         }
         else{// utilisateur trouvé
             $repMdp=takeMdp($dbh,$_POST['loginMail']);
             if($_POST['pass']!=$repMdp['mot_de_passe']){//mot de passe non trouvé dans la base de donnée
-                echo 'mauvais mot de passe';
+                $messageErreur= 'mauvais mot de passe';
+                include ('../Vue/home.php');
             }
             else{//mdp OK
               include ('../Vue/Dashboard.php');
@@ -30,12 +31,13 @@ if(isset($_POST['envoi'])) { // L'utilisateur vient de valider le formulaire de 
         }
     }
     else{
-        echo 'tout les champs ne sont pas rempli';
+        $messageErreur= 'tout les champs ne sont pas rempli';
+        include ('../Vue/home.php');
     }
 }
 else{
-    var_dump($_POST);
-    echo 'formulaire pas valider';
+    $messageErreur= 'formulaire pas valider';
+    include ('../Vue/home.php');
 }
 
 

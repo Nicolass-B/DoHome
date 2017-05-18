@@ -11,7 +11,7 @@
 <header>
     <div class="topPage">
         <logo>
-            <img class="logo" src="img/fond_transparent3.png" alt="logo de l'entreprise"/>
+            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
         </logo>
 
         <changeLangue>
@@ -60,6 +60,7 @@
          </p>
 
      </form>
+        <?php if(isset($messageErreur)){echo $messageErreur;}  ?> <!--affichage erreur mdp ou logmail -->
     </div>
 
 </div>
