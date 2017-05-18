@@ -6,7 +6,7 @@
  * Time: 11:44
  */
 
-$dsn = 'mysql:dbname=appinfo;host=localhost';
+$dsn = 'mysql:dbname=dohome;host=localhost';
 $user = 'root';
 $password = '';
 try{
