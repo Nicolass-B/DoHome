@@ -6,62 +6,44 @@
  * Time: 10:12
  */
 require_once ("init.php");
-class capteur
-{
-
-    private $idcapteur;
-    private $idpiece;
-    private $idmaison;
-    private $user;
-
-    private $type;
-    private $valeur_now;
-
-    private $pdo;
-
-
-    /**
-     * capteur constructor.
-     * @param $idcapteur
-     * @param PDO $db
-     */
-    public function __construct($idcapteur, PDO $db)
-    {
-        $this->idcapteur = $idcapteur;
-        $this->pdo = $db;
-        $this->get_capteurs_piece($this->idcapteur);
-    }
-
 
 // fonction qui cherche les capteurs pour une pièce donnée
+function get_capteurs_piece(PDO $db,$IDpiece){
 
-    /**
-     * @param $IDcapteur
-     */
-    public function get_capteurs_piece($IDcapteur)
-    {
+    $req = $db->prepare('SELECT ID_Capteurs FROM capteurs WHERE ID4=:idpiece');
+    $req->execute(array(
+        'idpiece' => $IDpiece,
+    ));
+    $resultat = $req->fetch();
 
-        $req = $this->pdo->prepare('SELECT ID_piece FROM capteurs WHERE ID_Capteurs=:idcapteur');
-        $req->bindParam(':idcapteur', $IDcapteur);
-        $req->execute();
-        $this->idpiece = $req->fetch();
-        $req2 = $this->pdo->prepare('SELECT ID_maison FROM pieces WHERE ID_pièces=:idpiece');
-        $req2->execute('idpiece', $this->idpiece);
-        $this->idmaison = $req2->fetch();
-    }
-
-    /**
-     * permet de récupérer la valeur instantannée du capteur et son type depuis la DB
-     */
-    private function get_valeur(){
-        $req = $this->pdo->prepare('SELECT Valeur FROM capteurs WHERE ID_Capteurs=:idcapteur');
-        $req->bindParam(':idcapteur', $this->idcapteur);
-        $req->execute();
-        $this->valeur_now = $req->fetch();
-        $req = $this->pdo->prepare('SELECT Type FROM capteurs WHERE ID_Capteurs=:idcapteur');
-        $req->bindParam(':idcapteur', $this->idcapteur);
-        $req->execute();
-        $this->type = $req->fetch();
-    }
+    return $resultat;
 }
+
+function get_piece_maison(PDO $db,$IDpiece){
+
+    $req = $db->prepare('SELECT ID_Capteurs FROM capteurs WHERE ID4=:idpiece');
+    $req->execute(array(
+        'idpiece' => $IDpiece,
+    ));
+        $resultat = $req->fetch();
+
+    return $resultat;
+}
+
+// fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
+
+function utilisateurs(PDO $db){
+    $reponse = $db->query("SELECT Mail FROM user");
+    return $reponse;
+}
+
+try{
+    //$db = new PDO("mysql:host=$host;dbname=$dbname", "$user");
+    $db->query("SET NAMES UTF8");
+    echo "connexion réussie";
+}
+catch (PDOException $e){
+    die('erreur : '. $e->getMessage());
+}
+
 ?>
