@@ -1,16 +1,20 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: Antoine
- * Date: 05/05/2017
- * Time: 09:32
- */
 
 $titre = "capteur";
 
 
-include '../modele/initConnexionBDD.php';
+include '../Modele/initConnexionBDD.php';
+include '../Modele/Capteur.php';
 
-$res = $dbh->query('SELECT * FROM user');
-$datas =$res->fetchAll(PDO::FETCH_OBJ);
-var_dump($datas);
+if (isset( $_POST['capteur']))
+{
+    $idcapteur = $_POST['capteur'];
+    $Capteur = new Capteur($idcapteur, $dbh);
+
+
+} else {
+    // ici le capteur n'est pas précisé dans le formulaire
+    // on renvoie a l'accueil.
+    echo (' tu n\'as pas posté un capteur');
+    header('Location : ../Vue/accueil.php');
+}
