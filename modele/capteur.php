@@ -5,45 +5,75 @@
  * Date: 05/05/2017
  * Time: 10:12
  */
-require_once ("initConnexionBDD.php.php");
+require_once ("initConnexionBDD.php");
+class capteur
+{
+
+    private $idcapteur;
+    private $idpiece;
+    private $idmaison;
+    private $id_user;
+
+    private $typecapteur;
+    private $valeur_now;
+
+    private $pdo; // pour les acces de l'objet a la base de données
+
+
+    /**
+     * capteur constructor.
+     * @param $idcapteur
+     * @param PDO $db
+     */
+    public function __construct($idcapteur, PDO $db)
+    {
+        $this->idcapteur = $idcapteur;
+        $this->pdo = $db;
+        $this->get_piece_and_maison($this->idcapteur);
+    }
+
 
 // fonction qui cherche les capteurs pour une pièce donnée
-function get_capteurs_piece(PDO $db,$IDpiece){
 
-    $req = $db->prepare('SELECT ID_Capteurs FROM capteurs WHERE ID4=:idpiece');
-    $req->execute(array(
-        'idpiece' => $IDpiece,
-    ));
-    $resultat = $req->fetch();
+    /**
+     * A partir de l'ID du capteur, indique l'IDpièce et celui de la maison
+     * permet de peupler des variables pour des cas futurs
+     * @param $IDcapteur
+     */
+    private function get_piece_and_maison($IDcapteur)
+    {
 
-    return $resultat;
+        $req = $this->pdo->prepare('SELECT ID_piece FROM capteurs WHERE ID_Capteurs=:idcapteur');
+        $req->bindParam(':idcapteur', $IDcapteur);
+        $req->execute();
+        $this->idpiece = $req->fetch();
+        $req2 = $this->pdo->prepare('SELECT ID_maison FROM pieces WHERE ID_pièces=:idpiece');
+        $req2->execute('idpiece', $this->idpiece);
+        $this->idmaison = $req2->fetch();
+    }
+
+    /**
+     * permet de récupérer la valeur instantannée du capteur et son type depuis la DB
+     */
+    public function get_valeur(){
+        $req = $this->pdo->prepare('SELECT Valeur FROM capteurs WHERE ID_Capteurs=:idcapteur');
+        $req->bindParam(':idcapteur', $this->idcapteur);
+        $req->execute();
+        $this->valeur_now = $req->fetch();
+        $req = $this->pdo->prepare('SELECT Type FROM capteurs WHERE ID_Capteurs=:idcapteur');
+        $req->bindParam(':idcapteur', $this->idcapteur);
+        $req->execute();
+        $this->typecapteur = $req->fetch();
+    }
+
+    public function get_valeur_history(){
+        $req = $this->pdo->prepare('SELECT Valeur FROM historique_capteurs WHERE ID_Capteurs=:idcapteur ORDER BY Date_Mesure');
+        $req->execute(':idcapteur', $this->idcapteur);
+
+        return $req;
+    }
+
+
+
 }
-
-function get_piece_maison(PDO $db,$IDpiece){
-
-    $req = $db->prepare('SELECT ID_Capteurs FROM capteurs WHERE ID4=:idpiece');
-    $req->execute(array(
-        'idpiece' => $IDpiece,
-    ));
-        $resultat = $req->fetch();
-
-    return $resultat;
-}
-
-// fonction qui cherche le mot de passe d'un utilisateur avec un identifiant dans la base de données
-
-function utilisateurs(PDO $db){
-    $reponse = $db->query("SELECT Mail FROM user");
-    return $reponse;
-}
-
-try{
-    //$db = new PDO("mysql:host=$host;dbname=$dbname", "$user");
-    $db->query("SET NAMES UTF8");
-    echo "connexion réussie";
-}
-catch (PDOException $e){
-    die('erreur : '. $e->getMessage());
-}
-
 ?>

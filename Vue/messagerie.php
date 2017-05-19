@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="../css/profil.css"/>
+    <link rel="stylesheet" href="../css/messagerie.css"/>
     <title> Mon profil </title>
 </head>
 <body>
