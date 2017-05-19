@@ -60,7 +60,9 @@
          </p>
 
      </form>
-        <?php if(isset($messageErreur)){echo $messageErreur;}  ?> <!--affichage erreur mdp ou logmail -->
+        <div class="test" >
+        <?php if(isset($messageErreur)){echo  $messageErreur;}  ?> <!--affichage erreur mdp ou logmail -->
+        </div>
     </div>
 
 </div>

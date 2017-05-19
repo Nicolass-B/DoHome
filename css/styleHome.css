@@ -134,3 +134,8 @@ input[type=submit] {
     position:relative;
     left:130%;
 }
+
+.test{
+    color: red;
+    font-size: 150%;
+}
