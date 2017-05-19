@@ -1,0 +1,258 @@
+body {
+    background-size: cover;
+    background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-size: cover;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    margin:0;
+}
+.LienImage {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+D{
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+
+    color: white;
+}
+
+a:focus {
+    color : rgba(0, 197, 85, 0.8);
+    text-decoration: none;
+
+}
+.enCours a {
+    text-decoration: none;
+    color:#00c555;
+}
+
+
+.recherche{
+    display: flex;
+    margin:auto;
+}
+section1{
+    display:flex;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu li{
+    padding: 6px;
+    border-left: 2px solid white;
+}
+.menu {
+    display:flex
+}
+
+li:first-child{
+    border-left:none;
+}
+
+nav{
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 13px;
+    color: white;
+}
+
+
+.container{
+    display: flex; /* permet d'aligner image et texte */
+}
+
+.logo{
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin:0;
+}
+
+
+
+
+footer {
+    display: flex;
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
+    margin: 0px;
+    background-size: cover;
+    background-color: #454545;
+    text-align: center;
+    padding-bottom:70px;
+}
+.droite {
+    position:relative;
+    left:195%;
+}
+.centre {
+    position:relative;
+    left:130%;
+}
+
+.mail {
+    width:50px;
+    height:30px;
+    margin:auto;
+    margin-left:200%;
+}
+.deconexion {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-left: 290%;
+}
+
+#searchthis #search-btn {
+    background-color: #00c555;   /* Couleur de fond */
+    border-style: solid;   /* Style de la bordure  */
+    border-width: 1px;   /* Epaisseur de la bordure  */
+    border-color: #00c555;   /* Couleur de la bordure  */
+    padding: 5px;
+    width: 200px;   /* Permet d'ajuster la largeur du bouton à 100% */
+    box-sizing: border-box;
+    font-family: PT sans;   /* Police du texte */
+    font-size: 13px;   /* Taille de la police du texte */
+    letter-spacing: 2px;   /* Espacement des caractères */
+    margin: 10px 0 0 0;   /* Espace autour du bouton : haut droite bas gauche  */
+    text-transform: uppercase;   /* Transforme le texte en majuscules */
+    color: white;   /* Couleur du texte */
+}
+
+#searchthis #search{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+
+
+
+
+
+
+.logo2{
+    margin: 25%;
+    width: 35%;
+    height: 20%;
+
+}
+.logo3{
+    margin: 25%;
+    margin-top: 10%;
+    width: 35%;
+    height: 20%;
+
+
+}
+
+.information{
+    font-family: PT sans;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+#maison{
+    color: #00c555;
+}
+.salon{
+    border: solid;
+    border-radius: 5%;
+    color: white;
+    margin: 55px;
+    padding : 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.cuisine{
+    border: solid;
+    border-radius: 5%;
+    color: white;
+    margin: 55px;
+    padding : 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+
+.chambre1{
+    border: solid;
+    border-radius: 5%;
+    color: white;
+    margin: 55px;
+    padding : 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+.salle_de_bain{
+    border: solid;
+    border-radius: 5%;
+    color: white;
+    margin: 55px;
+    padding : 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+.chambre2{
+    border: solid;
+    border-radius: 5%;
+    color: white;
+    margin: 55px;
+    padding : 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+.salle_a_manger{
+    border: solid;
+    border-radius: 5%;
+    color: white;
+    margin: 55px;
+    padding : 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+ x{
+     display: flex;
+ }
+
+.ajout {
+    margin: 25%;
+    text-align: center;
+    color: white;
+}
+
+
+
+

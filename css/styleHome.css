@@ -1,0 +1,136 @@
+html {
+    font-size: 62.5%;
+}
+
+header{
+    background-size: cover;
+    background-color: #1b1b1b;
+    margin: 0;
+    height:25%;
+
+}
+body {
+    background-size: cover;
+    background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
+    margin: 0;
+    height:50%;
+}
+footer {
+    display: flex;
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
+    margin: 0px;
+    background-size: cover;
+    background-color: #454545;
+    text-align: center;
+    padding-bottom:70px;
+}
+
+
+
+.topPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    margin-right: 30px;
+}
+li{
+    border: 1px solid black;
+    display: inline;
+    font-size: 15px;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 50%;
+    height: 90%;
+}
+.changeLangue{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.corpPage{
+    display: flex;
+}
+
+
+.conteneur{
+    display: flex;
+    flex-direction: row;/*organisés sur une ligne*/
+    justify-content: space-between;/* éléments sont étirés sur tout l'axe*/
+    align-items: center;/*alignés au centre*/
+}
+.textIntro{
+    background-color: white;
+    opacity: 0.7;
+    border: 1px solid black;
+    color: black;
+    margin: 50px;
+    padding: 15px;
+    width: auto;
+    text-align: justify;
+    font-weight: bold;
+    text-justify: inter-word;
+}
+
+.connexion-inscription{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    opacity: 0.7;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color : black;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+input[type=text]{
+    width: 230px;
+    height: 25px;
+    font-size: 150%;
+    margin-left: 35px;
+    margin-top: 20px;
+
+
+}
+input[type=password]{
+    width: 230px;
+    height: 25px;
+    font-size: 150%;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
+}
+input[type=submit] {
+    width: 120px;
+    height: 25px;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-top: 10px;
+
+}
+
+
+#t{
+    margin-left: 35px;
+    font-size: 150%;
+}
+
+
+.droite {
+    position:relative;
+    left:195%;
+}
+.centre {
+    position:relative;
+    left:130%;
+}

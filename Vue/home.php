@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styleHome.css"/>
+    <title>Accueil DoHome enterprise ™</title>
+</head>
+<body>
+
+
+<header>
+    <div class="topPage">
+        <logo>
+            <img class="logo" src="img/fond_transparent3.png" alt="logo de l'entreprise"/>
+        </logo>
+
+        <changeLangue>
+            <ul>
+                <li><a href="">FR</a></li>
+                <li><a href="">EN</a></li>
+            </ul>
+        </changeLangue>
+
+    </div>
+</header>
+
+<div class="corpPage">
+    <div class="textIntro">
+
+            l'approche sociale dans notre pays encourage la diversité
+            et la sensibilité d'un mouvement cheminant vers plus d'unité.
+            En effet, c'est en toute prescience que je peux garantir
+            présentement que la sécurité des personnes confirme
+            l'inaliénable volonté d'un temps et d'une époque en phase
+            avec les innovations afin de ne pas être dépassé.
+            Beaucoup de nos concitoyens n’ont pas encore fait leur
+            choix et pensent que la tradition attachée à notre mémoire
+            consubstantielle justifie les subventions publiques d'un
+            déploiement visionnaire revivifiant. De plus, vous
+            connaissez certainement la situation qui mène à dire que
+            la dynamique vertueuse doit correspondre aux directives
+            indispensables préalablement établies afin de poursuivre
+            l'effort plus que légitime d'une majorité parlementaire
+            qui responsabiliserait sur l'urgence écologique.
+
+    </div>
+
+    <div class="connexion-inscription">
+     <form method="POST" action="../controller/traitementConnexion.php">
+
+       <input type="text" name="loginMail" " placeholder="Login"  required/>
+       <input type="password" name="pass"  placeholder="Mot de passe" required/>
+       <input type="submit" name="envoi" value="Se connecter" />
+
+         <input type="checkbox" name="memo" id="memo"/>
+         <label for="memo">Se souvenir de moi</label>
+         <p>
+             <a id="t"  href="../Vue/signUp.php">S'inscrire</a>
+             <a id="t" href="">Mdp oublié ?</a>
+         </p>
+
+     </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>
+        <span class="centre">Powered By DoHome Enterprise™</span>
+        <span class="droite">Mentions Légales</span>
+    </p>
+
+</footer>
+
+
+</body>
+</html>
