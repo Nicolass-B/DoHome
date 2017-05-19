@@ -28,7 +28,29 @@ footer {
     text-align: center;
     padding-bottom:70px;
 }
+nav {
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 13px;
+    color: white;
+}
 
+.textIntro{
+    border-radius: 20px;
+    width: 400px;
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    horizontal-align: middle ;
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+    font-family: PT sans;
+}
 
 
 .topPage{
@@ -40,24 +62,18 @@ ul{
     margin-right: 30px;
 }
 li{
-    border: 1px solid black;
     display: inline;
     font-size: 15px;
 }
 .logo{
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 50%;
-    height: 90%;
+    width: 100%;
+    height: auto;
 }
-.changeLangue{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 
 .corpPage{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -67,36 +83,26 @@ li{
     justify-content: space-between;/* éléments sont étirés sur tout l'axe*/
     align-items: center;/*alignés au centre*/
 }
-.textIntro{
-    background-color: white;
-    opacity: 0.7;
-    border: 1px solid black;
-    color: black;
-    margin: 50px;
-    padding: 15px;
-    width: auto;
-    text-align: justify;
-    font-weight: bold;
-    text-justify: inter-word;
-}
 
 .connexion-inscription{
     width: 300px;
-    height: 200px;
-    background-color: white;
-    opacity: 0.7;
-    border: 1px solid black;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color : black;
-    font-weight: bold;
-    margin-right: 30px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    horizontal-align: middle ;
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+    font-family: PT sans;
 }
 
 input[type=text]{
     width: 230px;
     height: 25px;
-    font-size: 150%;
+    font-size: 19px;
     margin-left: 35px;
     margin-top: 20px;
 
@@ -105,7 +111,7 @@ input[type=text]{
 input[type=password]{
     width: 230px;
     height: 25px;
-    font-size: 150%;
+    font-size: 19px;
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 10px;
@@ -116,15 +122,31 @@ input[type=submit] {
     margin-right: 35px;
     margin-left: 35px;
     margin-top: 10px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
 
 }
 
 
 #t{
-    margin-left: 35px;
-    font-size: 150%;
+    width:100px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #00c555;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid #00c555;
+    font-size: 13px;
+    margin: 10px;
+    padding:3px;
 }
-
 
 .droite {
     position:relative;

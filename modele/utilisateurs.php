@@ -5,11 +5,8 @@
  * Date: 05/05/2017
  * Time: 10:13
  */
-include 'init.php';
+include 'initConnexionBDD.php';
 
-<<<<<<< HEAD
-function connectUser($db, $email, $mot_de_passe)
-=======
 // vérif mdp dans BDD
 function takeMdp(PDO $dbh, $login)
 {
