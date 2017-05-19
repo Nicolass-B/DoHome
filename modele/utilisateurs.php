@@ -145,4 +145,4 @@ function createUser($bdd, $utilisateur)
     return ($id_client);
 
 }
-
+*/

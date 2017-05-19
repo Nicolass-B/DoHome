@@ -161,3 +161,9 @@ input[type=submit] {
     color: red;
     font-size: 150%;
 }
+
+
+.styleMessageErreur{
+    color: red;
+    font-size: 150%;
+}

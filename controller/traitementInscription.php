@@ -33,7 +33,7 @@ if(isset($_POST['envoi'])){//envoi du formulaire
         require ('../modele/Inscription.php');
         if(verif2MDP($pass,$confirmePasse)){
             if(verifMail($dbh,$mail)==false){
-                insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse,4);
+                insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse);
                 echo 'inscription réussi';
             }
 

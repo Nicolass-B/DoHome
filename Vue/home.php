@@ -61,13 +61,12 @@
              </p>
 
          </form>
+        <div class="styleMessageErreur">
+        <?php if(isset($messageErreur)) {echo $messageErreur;}?>
+        </div>
     </div>
 
 </div>
-
-<?php include("BasDePage.php"); ?>
-
-
-
 </body>
+<?php include("../Vue/BasDePage.php"); ?>
 </html>

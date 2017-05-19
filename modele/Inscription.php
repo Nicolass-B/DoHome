@@ -10,7 +10,7 @@ require ('initConnexionBDD.php');
 
 //Fonction qui insert un user dans la Base de donnée
 function insertUser(PDO $bdd,$nom,$prenom,$mot_de_passe,$telephone,$email,$adresse){
-    $query=$bdd->prepare('INSERT INTO user(Nom, Prenom, mot_de_passe,telephone, Mail,adresse,id) VALUES(:nom, :prenom, :mot_de_passe,:telephone, :email ,:adresse,:idUser)');
+    $query=$bdd->prepare('INSERT INTO user(Nom, Prenom, mot_de_passe,telephone, Mail,adresse) VALUES(:nom, :prenom, :mot_de_passe,:telephone, :email ,:adresse)');
     $query->execute(array(
         'nom' => $nom,
         'prenom' => $prenom,
