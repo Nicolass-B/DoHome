@@ -1,3 +1,4 @@
+
 header {
     background-size: cover;
     background-color: #1b1b1b;
@@ -18,10 +19,6 @@ body {
     margin-bottom: auto;
     margin-top: auto;
 }
-.LienImage2 {
-    margin-top:auto;
-}
-
 .logo {
     float: left;
     width: 20%;
@@ -39,10 +36,9 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
-}
-section1 {
-    display: flex;
-}
+}section1 {
+     display: flex;
+ }
 nav {
     font-family: PT sans;
     letter-spacing: 2px;
@@ -126,26 +122,43 @@ footer {
 
 }
 
-.droite {
-    position: relative;
-    left: 200%;
-}
 
-.centre {
-    position: relative;
-    left: 130%;
-}
 
 .mail {
     width: 50px;
     height: 30px;
     margin: auto;
-    margin-left: 200%;
+    margin-left: 150px;
 }
 
 .deconexion {
     width: 40px;
     height: 40px;
     margin: auto;
-    margin-left: 290%;
+    margin-left: 15px;
+}
+
+.droite {
+    position: absolute;
+    right: 10px;
+}
+
+.centre {
+    position: absolute;
+    left: 600px;
+}
+
+footer {
+    display: flex;
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
+    margin: 0px;
+    background-size: cover;
+    background-color: #454545;
+    text-align: center;
+    padding-bottom: 85px;
+
 }

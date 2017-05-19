@@ -17,12 +17,6 @@
 </body>
 
 
-<footer>
-    <p>
-        <span class="centre">Powered By DoHome Enterprise™</span>
-        <span class="droite">Mentions Légales</span>
-    </p>
+<?php include("BasDePage.php"); ?>
 
-
-</footer>
 </html>

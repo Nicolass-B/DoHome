@@ -42,14 +42,6 @@
 
 
 </body>
+<?php include("BasDePage.php"); ?>
 
-
-<footer>
-    <p>
-        <span class="centre">Powered By DoHome Enterprise™</span>
-        <span class="droite">Mentions Légales</span>
-    </p>
-
-
-</footer>
 </html>
