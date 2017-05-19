@@ -176,3 +176,7 @@ footer {
     display:flex;
     justify-content: space-around;
 }
+section2 p {
+    text-align:center;
+    color:white;
+}
