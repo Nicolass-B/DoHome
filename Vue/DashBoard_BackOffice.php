@@ -5,41 +5,17 @@
     <link rel="stylesheet" href="../css/profil.css"/>
     <title> Mon profil </title>
 </head>
-<body>
-<header>
-    <section1>
-        <div class="container">
-            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
-            <nav>
-                <ul>
-                    <div class="menu">
-                        <li><a href="Dashboard_BackOffice.php">Dashboard</a></li>
-                        <li><a href="monProfil.php">Analyse</a></li>
-                        <li><a href="Maison.php">Messagerie</a></li>
-                        <li><a href="Boutique.php">BackOffice</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </section1>
-    <section1>
-        <div class="recherche">
-            <form action="/search" id="searchthis" method="get">
-                <input id="search" name="q" type="text" placeholder="Rechercher"/>
-                <input id="search-btn" type="submit" value="Rechercher"/>
-            </form>
-        </div>
-    </section1>
-    <section1>
-        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
-
-    </section1>
-</header>
-
-
+<?php include("HautDePageBackOffice.php"); ?>
 
 <body>
 
+
+<body>
+<div class="dashAdmin">
+    <a class="LienImage" href="analyseBackOffice.php"><img class="analyse" src="../Vue/img/analyse.png" alt="logo analyse"/></a>
+    <a class="LienImage" href="messagerieBackOffice.php"><img class="messagerie" src="../Vue/img/messagerie.png" alt="logo message"/></a>
+    <a class="LienImage" href="adminBackOffice.php"><img class="backOffice" src="../Vue/img/backoffice.png" alt="logo backOffice"/></a>
+</div>
 
 </body>
 <?php include("BasDePage.php"); ?>

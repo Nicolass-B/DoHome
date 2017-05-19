@@ -19,6 +19,7 @@ body {
     margin-bottom: auto;
     margin-top: auto;
 }
+
 .logo {
     float: left;
     width: 20%;
@@ -36,9 +37,12 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
-}section1 {
-     display: flex;
- }
+}
+
+section1 {
+    display: flex;
+}
+
 nav {
     font-family: PT sans;
     letter-spacing: 2px;
@@ -57,6 +61,7 @@ ul {
     border-left: 2px solid white;
     padding: 6px;
 }
+
 li:first-child {
     border-left: none;
 }
@@ -122,25 +127,27 @@ footer {
 
 }
 
-
-
 .mail {
     width: 50px;
     height: 30px;
-    margin: auto;
-    margin-left: 150px;
+    position: absolute;
+    right: 110px;
+    top: 37px;
 }
 
 .deconexion {
     width: 40px;
     height: 40px;
-    margin: auto;
-    margin-left: 15px;
+
+    position: absolute;
+    right: 50px;
+    top: 30px;
 }
 
 .droite {
     position: absolute;
     right: 10px;
+
 }
 
 .centre {
@@ -161,4 +168,11 @@ footer {
     text-align: center;
     padding-bottom: 85px;
 
+}
+
+.dashAdmin {
+    margin:20px;
+    padding:50px;
+    display:flex;
+    justify-content: space-around;
 }
