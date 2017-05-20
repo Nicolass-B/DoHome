@@ -1,6 +1,6 @@
 
 <?php
-
+//TODO S'amuser avec la barre de recherche et des requete mysql LIKE
 session_start();
 require_once("Modele/init.php");
 
