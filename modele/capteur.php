@@ -25,7 +25,7 @@ function get_piece_maison(PDO $db,$IDpiece){
     $req->execute(array(
         'idpiece' => $IDpiece,
     ));
-        $resultat = $req->fetch();
+    $resultat = $req->fetch();
 
     return $resultat;
 }
@@ -45,5 +45,3 @@ try{
 catch (PDOException $e){
     die('erreur : '. $e->getMessage());
 }
-
-?>
