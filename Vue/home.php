@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styleHome.css"/>
@@ -9,20 +9,25 @@
 
 
 <header>
-    <div class="topPage">
-        <logo>
-            <img class="logo" src="img/fond_transparent3.png" alt="logo de l'entreprise"/>
-        </logo>
+    <section1>
+        <div class="container">
+            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
+            <nav>
+                <ul>
+                    <div class="menu">
+                        <li><a href="">FR</a></li>
+                        <li><a href="">EN</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </section1>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="">FR</a></li>
-                <li><a href="">EN</a></li>
-            </ul>
-        </nav>
-
-    </div>
 </header>
+<body>
+
+
+
 
 <div class="corpPage">
     <div class="textIntro">
@@ -66,7 +71,10 @@
         </div>
     </div>
 
-</div>
+
+
+
 </body>
-<?php include("../Vue/BasDePage.php"); ?>
+<?php include("BasDePage.php"); ?>
+
 </html>
