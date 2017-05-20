@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: Antoine
- * Date: 05/05/2017
- * Time: 10:13
- */
 include 'initConnexionBDD.php';
 
 // vérif mdp dans BDD
