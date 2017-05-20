@@ -19,8 +19,10 @@ if (isset($_POST['capteur']))
     // ici le capteur n'est pas précisé dans le formulaire
     // on renvoie a l'accueil.
     $idmaison = 1; //$_SESSION['idmaison']; to add quand on aura les sessions
-    getPiecesfromMaison($dbh, $idmaison);
-
+    $idpiece = 1; //$_SSESSION['idpiece']
+    //TODO ajouter les sessions et remplacer ici.
+    $pieces = getPiecesfromMaison($dbh, $idmaison);
+    $capteur_piece = getCapteursfromPiece($dbh, $idpiece);
     include('../Vue/capteur.php');
 
 
