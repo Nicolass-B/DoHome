@@ -2,20 +2,24 @@
 include 'initConnexionBDD.php';
 
 // vérif mdp dans BDD
-function takeMdp(PDO $dbh, $login)
+function takeMdp(PDO $bdd, $login)
 {
-    $reponse = $dbh->query('SELECT mot_de_passe FROM user  WHERE Mail=\'' . $login . '\'');
+
+    $reponse = $bdd->prepare('SELECT mot_de_passe FROM user  WHERE Mail=\'' . $login . '\'');
+    $reponse->execute();
     $affiche = $reponse->fetch();
     return $affiche;
 }
 
 // vérif user
-function takeUtilisateurs(PDO $dbh, $login)
+function takeUtilisateurs(PDO $bdd, $login)
 {
-    $reponse = $dbh->query('SELECT COUNT(mail) AS nb_ocu FROM user WHERE Mail=\'' . $login . '\'');
+    $reponse = $bdd->prepare('SELECT COUNT(mail) AS nb_ocu FROM user WHERE Mail=\'' . $login . '\'');
+    $reponse->execute();
     $affiche = $reponse->fetch();
     return $affiche;
 }
+
 
 function updateUser(PDO $bdd, $id_client, $infos)
 {

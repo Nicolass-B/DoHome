@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/HautBasDePage.css"/>
     <link rel="stylesheet" href="../css/styleHome.css"/>
     <title>Accueil DoHome enterprise ™</title>
 </head>
@@ -75,6 +76,6 @@
 
 
 </body>
-<?php include("BasDePage.php"); ?>
+<?php include("../Vue/BasDePage.php"); ?>
 
 </html>
