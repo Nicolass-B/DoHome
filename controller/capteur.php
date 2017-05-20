@@ -3,8 +3,10 @@
 $titre = "capteur";
 
 
-include '../Modele/initConnexionBDD.php';
-include '../Modele/Capteur.php';
+require_once '../Modele/initConnexionBDD.php';
+require_once '../Modele/capteur.php';
+require_once '../Modele/ajouts.php';
+require_once '../Modele/pieces.php';
 
 if (isset($_POST['capteur']))
 {
@@ -16,27 +18,27 @@ if (isset($_POST['capteur']))
 } else {
     // ici le capteur n'est pas précisé dans le formulaire
     // on renvoie a l'accueil.
-    echo(' tu n\'as pas POST un capteur ');
-
     $idmaison = 1; //$_SESSION['idmaison']; to add quand on aura les sessions
-    $query = "SELECT ID_pieces,Nom FROM pieces WHERE ID_Maison =:idmaison";
-    $sql = $dbh->prepare($query);
-    $sql->bindParam(':idmaison', $idmaison);
-    $sql->execute();
-    $data = $sql->fetchAll();
-    $ligne = count($data);
+    getPiecesfromMaison($dbh, $idmaison);
+
     include('../Vue/capteur.php');
+
 
 
     if (isset($_POST['envoi'])) {
         if (isset($_POST['type'])) {
             if (isset($_POST['piece'])) {
                 if (isset($_POST['nom_capteur'])) {
-
+                    ajoutCapteur($dbh, $_POST['type'], $_POST['piece']);
+                    ?>
+                    <script>alert("<?php echo htmlspecialchars('Un capteur vient d\'être ajouté', ENT_QUOTES); ?>")</script>
+                    <?php
 
                 }
             }
         }
         echo "<p>DAMN, tu viens d'ajouter un capteur dans la pièce !</p>";
+    } else{
+        echo 'pas de POST';
     }
 }

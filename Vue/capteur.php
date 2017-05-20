@@ -18,6 +18,7 @@ require_once('../controller/capteur.php');
             <option value="son">Son</option>
         </select>
         <select name="piece" required>
+            <option value="">Pièce</option>
             <?php
             foreach ($data as $row) {
                 echo "<option value=" . $row['ID_pièces'] . ">" . $row['Nom'] . "</option>";
@@ -33,29 +34,24 @@ require_once('../controller/capteur.php');
 
 <div>
     <table>
+        <thead>
+            <td>ID</td>
+            <td>Nom</td>
+            <td>Valeur</td>
+            <td>Unité</td>
+            <td>Etat batterie</td>
+        </thead>
         <tbody>
         <?php
-        // $NbrCol : le nombre de colonnes
-        // $NbrLigne : le nombre de lignes
-        // -------------------------------
-        // pour chaque ligne
-        for ($i = 1; $i <= $ligne; $i++) {
+        foreach($data as $row) {
             ?>
             <tr>
-                <?php // pour chaque colonne (de la ligne)
-                for ($j = 1; $j <= 6; $j++) {
-                    ?>
-                    <td>
-                        <?php // -------------------------
-                        // DONNEES A AFFICHER dans la cellule
-                        echo 'ligne ' . $i . ', colonne ' . $j; // CONTENU de la CELLULE (exemple)
-                        // -------------------------
-                        ?>        </td>
-                <?php } // end for
-                ?>
+                <td><?php echo $row['Id']?></td>
+                <td><?php echo $row['Name']?></td>
             </tr>
+
             <?php
-        } // end for
+        }
         ?>
         </tbody>
     </table>
