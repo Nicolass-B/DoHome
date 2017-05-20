@@ -48,14 +48,16 @@ class capteur
         $req->bindParam(':idcapteur', $IDcapteur);
         $req->execute();
         $this->idpiece = $req->fetch();
-        $req2 = $this->pdo->prepare('SELECT ID_maison FROM pieces WHERE ID_pièces=:idpiece');
-        var_dump($this->idpiece);
+        $req2 = $this->pdo->prepare('SELECT ID_maison FROM pieces WHERE ID_pieces=:idpiece');
+        $id = $this->idpiece["ID_piece"];
+        var_dump($id);
         $req2->execute(array(
-            "idpiece" => $this->idpiece["ID_piece"]
+            "idpiece" => intval($id)
         ));
         var_dump($req2);
         $this->idmaison = $req2->fetch();
         var_dump($req2);
+        //echo" GOGOOGOGOGO";
     }
 
     /**
