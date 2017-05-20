@@ -5,8 +5,10 @@
  * Date: 05/05/2017
  * Time: 10:13
  */
-require 'initConnexionBDD.php';
+include 'init.php';
 
+
+//function connectUser($db, $email, $mot_de_passe)
 // vérif mdp dans BDD
 function takeMdp(PDO $dbh, $login)
 {
@@ -114,21 +116,21 @@ var_dump($rep);
 
 function connectUser(PDO $db, $email, $mot_de_passe)
 {
-    ####
 // Vérification des identifiants
     $email = htmlspecialchars($email);
     $mot_de_passe = htmlspecialchars($mot_de_passe);
-    $req = $db-> prepare('SELECT Mail,mot_de_passe FROM user WHERE Mail = :email AND mot_de_passe = :mot_de_passe');
-    $req-> execute(array(
+    $req = $db->prepare('SELECT * FROM user WHERE Mail = :email AND mot_de_passe = :mot_de_passe');
+    $req->execute(array(
         'email' => $email,
         'mot_de_passe' => md5($mot_de_passe)));
 
-    $resultat = $req-> fetch();
+    $resultat = $req->fetch();
 
+    //echo ("BLOP");
     return ($resultat);
 }
 
-function createUser(PDO $bdd, $utilisateur)
+function createUser($bdd, $utilisateur)
 {
     $query=$bdd->prepare('INSERT INTO client(nom, prenom, mot_de_passe, email) VALUES(:nom, :prenom, :mot_de_passe, :email)');
     $query->execute(array(
@@ -142,4 +144,5 @@ function createUser(PDO $bdd, $utilisateur)
 
     return ($id_client);
 
-}*/
+}
+

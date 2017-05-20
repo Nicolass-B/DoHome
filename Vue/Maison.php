@@ -32,7 +32,7 @@
             </div>
         </section1>
         <section1>
-            <img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/>
+            <a class="LienImage" href="messagerie.php"><img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/></a>
             <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></>
 
         </section1>
@@ -69,7 +69,7 @@
         <p>SALLE DE BAIN</p>
 
     </div>
-    <div class="salle_a_manger"
+    <div class="salle_a_manger">
          <p>SALLE A MANGER</p>
     </div>
 </section3>
