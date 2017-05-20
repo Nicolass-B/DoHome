@@ -1,7 +1,6 @@
 body {
     background-size: cover;
-    background: url("../Vue/img/fond-decran-page2.jpg") fixed no-repeat center;
-    background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
+    background: linear-gradient(to bottom right, #2b2b2b, #2b2b2b) no-repeat fixed center;
     margin:0;
     height: auto;
     width: 100%;
@@ -65,4 +64,12 @@ nav{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
+}
+
+#footer{
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
 }

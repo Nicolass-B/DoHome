@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="../css/Haut-de-Page.css"/>
     <meta charset="UTF-8">
-    <title>Nom de la page</title>
+    <title><?php echo $titre ?> </title>
 </head>
 
 <body>
@@ -28,8 +28,8 @@
         <section>
             <div class="recherche">
                 <form action="search" id="searchthis" method="get">
-                    <input id="search" name="q" type="text" placeholder="Rechercher" />
-                    <input id="search-btn" type="submit" value="Rechercher" />
+                    <input id="search" name="q" type="text" placeholder="Rechercher"/>
+                    <input id="search-btn" type="submit" value="Rechercher"/>
                 </form>
             </div>
         </section>
@@ -39,9 +39,11 @@
 
 </body>
 
-<footer>
-    <div class="Powered">Powered By DoHome Enterprise™</div>
-    <div class="Mentions">Mentions Légales</div>
+<footer class="footer">
+    <div>
+        <div class="Powered">Powered By DoHome Enterprise™</div>
+        <div class="Mentions">Mentions Légales</div>
+    </div>
 </footer>
 
 </html>

@@ -48,8 +48,13 @@ class capteur
         $req->execute();
         $this->idpiece = $req->fetch();
         $req2 = $this->pdo->prepare('SELECT ID_maison FROM pieces WHERE ID_pièces=:idpiece');
-        $req2->execute('idpiece', $this->idpiece);
+        var_dump($this->idpiece);
+        $req2->execute(array(
+                    "idpiece" => $this->idpiece["ID_piece"]
+        ));
+        var_dump($req2);
         $this->idmaison = $req2->fetch();
+        var_dump($req2);
     }
 
     /**
@@ -68,7 +73,7 @@ class capteur
 
     public function get_valeur_history(){
         $req = $this->pdo->prepare('SELECT Valeur FROM historique_capteurs WHERE ID_Capteurs=:idcapteur ORDER BY Date_Mesure');
-        $req->execute(':idcapteur', $this->idcapteur);
+        $req->execute(array('idcapteur' => $this->idcapteur));
 
         return $req;
     }
