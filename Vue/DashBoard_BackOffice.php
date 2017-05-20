@@ -5,51 +5,29 @@
     <link rel="stylesheet" href="../css/profil.css"/>
     <title> Mon profil </title>
 </head>
-<body>
-<header>
-    <section1>
-        <div class="container">
-            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
-            <nav>
-                <ul>
-                    <div class="menu">
-                        <li><a href="Dashboard.php">Dashboard</a></li>
-                        <li><a href="monProfil.php">Mon profil</a></li>
-                        <li><a href="Maison.php">Ma maison</a></li>
-                        <li><a href="Boutique.php">Boutique</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </section1>
-    <section1>
-        <div class="recherche">
-            <form action="/search" id="searchthis" method="get">
-                <input id="search" name="q" type="text" placeholder="Rechercher"/>
-                <input id="search-btn" type="submit" value="Rechercher"/>
-            </form>
-        </div>
-    </section1>
-    <section1>
-        <a class="LienImage" href="messagerie.php"><img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/></a>
-        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
-
-    </section1>
-</header>
-
-
+<?php include("HautDePageBackOffice.php"); ?>
 
 <body>
 
+
+<body>
+<div class="information">
+<div class="dashAdmin">
+    <section2>
+        <a class="LienImage" href="analyseBackOffice.php"><img class="analyse" src="../Vue/img/analyse.png" alt="logo analyse"/></a>
+        <p> Analyse des comptes</p>
+    </section2>
+    <section2>
+        <a class="LienImage" href="messagerieBackOffice.php"><img class="messagerie" src="../Vue/img/messagerie.png" alt="logo message"/></a>
+        <p> Messagerie interne</p>
+    </section2>
+    <section2>
+        <a class="LienImage" href="adminBackOffice.php"><img class="backOffice" src="../Vue/img/backoffice.png" alt="logo backOffice"/></a>
+        <p> BackOffice</p>
+    </section2>
+</div>
+</div>
 </body>
+<?php include("BasDePage.php"); ?>
 
-
-<footer>
-    <p>
-        <span class="centre">Powered By DoHome Enterprise™</span>
-        <span class="droite">Mentions Légales</span>
-    </p>
-
-
-</footer>
 </html>

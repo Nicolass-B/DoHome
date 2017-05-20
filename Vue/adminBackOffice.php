@@ -2,21 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="../css/messagerie.css"/>
+    <link rel="stylesheet" href="../css/profil.css"/>
     <title> Mon profil </title>
 </head>
-<?php include("Haut-de-Page.php"); ?>
+<?php include("HautDePageBackOffice.php"); ?>
 
 <body>
 
 
 
-
 <body>
+
 
 </body>
-
-
 <?php include("BasDePage.php"); ?>
 
 </html>

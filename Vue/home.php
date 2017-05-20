@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styleHome.css"/>
     <title>Accueil DoHome enterprise ™</title>
 </head>
+<header>
+    <section1>
+        <div class="container">
+            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
+            <nav>
+                <ul>
+                    <div class="menu">
+                        <li><a href="">FR</a></li>
+                        <li><a href="">EN</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </section1>
+
+</header>
 <body>
 
 
-<header>
-    <div class="topPage">
-        <logo>
-            <img class="logo" src="img/fond_transparent3.png" alt="logo de l'entreprise"/>
-        </logo>
 
-        <changeLangue>
-            <ul>
-                <li><a href="">FR</a></li>
-                <li><a href="">EN</a></li>
-            </ul>
-        </changeLangue>
-
-    </div>
-</header>
 
 <div class="corpPage">
     <div class="textIntro">
 
-            l'approche sociale dans notre pays encourage la diversité
+            L'approche sociale dans notre pays encourage la diversité
             et la sensibilité d'un mouvement cheminant vers plus d'unité.
             En effet, c'est en toute prescience que je peux garantir
             présentement que la sécurité des personnes confirme
@@ -46,32 +48,29 @@
     </div>
 
     <div class="connexion-inscription">
-     <form method="POST" action="../controller/traitementConnexion.php">
+         <form method="POST" action="../controller/traitementConnexion.php">
 
-       <input type="text" name="loginMail" " placeholder="Login"  required/>
-       <input type="password" name="pass"  placeholder="Mot de passe" required/>
-       <input type="submit" name="envoi" value="Se connecter" />
+           <input type="text" name="loginMail" " placeholder="Login"  required/>
+           <input type="password" name="pass"  placeholder="Mot de passe" required/>
+           <input type="submit" name="envoi" value="Se connecter" />
 
-         <input type="checkbox" name="memo" id="memo"/>
-         <label for="memo">Se souvenir de moi</label>
-         <p>
-             <a id="t"  href="../Vue/signUp.php">S'inscrire</a>
-             <a id="t" href="">Mdp oublié ?</a>
-         </p>
+            </br></br>
+            <input type="checkbox" name="memo" id="memo"/>
+             <label for="memo">Se souvenir de moi</label>
+             <p>
+                 <a id="t"  href="../Vue/signUp.php">S'inscrire</a>
+                 <a id="t" href="">Mdp oublié ?</a>
+             </p>
 
-     </form>
+         </form>
     </div>
 
 </div>
 
-<footer>
-    <p>
-        <span class="centre">Powered By DoHome Enterprise™</span>
-        <span class="droite">Mentions Légales</span>
-    </p>
 
-</footer>
 
 
 </body>
+<?php include("BasDePage.php"); ?>
+
 </html>

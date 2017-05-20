@@ -1,3 +1,4 @@
+
 header {
     background-size: cover;
     background-color: #1b1b1b;
@@ -18,9 +19,6 @@ body {
     margin-bottom: auto;
     margin-top: auto;
 }
-.LienImage2 {
-    margin-top:auto;
-}
 
 .logo {
     float: left;
@@ -40,9 +38,11 @@ body {
     text-transform: uppercase;
     color: white;
 }
+
 section1 {
     display: flex;
 }
+
 nav {
     font-family: PT sans;
     letter-spacing: 2px;
@@ -61,6 +61,7 @@ ul {
     border-left: 2px solid white;
     padding: 6px;
 }
+
 li:first-child {
     border-left: none;
 }
@@ -126,26 +127,56 @@ footer {
 
 }
 
-.droite {
-    position: relative;
-    left: 200%;
-}
-
-.centre {
-    position: relative;
-    left: 130%;
-}
-
 .mail {
     width: 50px;
     height: 30px;
-    margin: auto;
-    margin-left: 200%;
+    position: absolute;
+    right: 110px;
+    top: 37px;
 }
 
 .deconexion {
     width: 40px;
     height: 40px;
-    margin: auto;
-    margin-left: 290%;
+
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+.droite {
+    position: absolute;
+    right: 100px;
+
+}
+
+.centre {
+    position: absolute;
+    left: 600px;
+}
+
+footer {
+    display: flex;
+    font-family: PT sans;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
+    margin: 0px;
+    background-size: cover;
+    background-color: #454545;
+    text-align: center;
+    padding-bottom: 85px;
+
+}
+
+.dashAdmin {
+    margin:20px;
+    padding:50px;
+    display:flex;
+    justify-content: space-around;
+}
+section2 p {
+    text-align:center;
+    color:white;
 }

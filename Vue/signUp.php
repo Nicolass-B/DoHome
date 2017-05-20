@@ -5,20 +5,28 @@
     <link rel="stylesheet" href="../css/styleSignUp.css"/>
     <title>Inscription</title>
 </head>
+
+<header>
+    <section1>
+        <div class="container">
+            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
+            <nav>
+                <ul>
+                    <div class="menu">
+                        <li><a href="">FR</a></li>
+                        <li><a href="">EN</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </section1>
+
+</header>
+
 <body>
 
 
-<header>
-    <div class="container">
-            <img class="logo" src="../Vue/img/fond_transparent3.png" alt="logo de l'entreprise"/>
-        <nav>
-            <ul class="menu">
-                <li><a href="">FR</a></li>
-                <li><a href="">EN</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+
 
 
 <section>
@@ -114,12 +122,9 @@
 </section>
 
 
-<footer>
-    <p>
-        <span class="centre">Powered By DoHome Enterprise™</span>
-        <span class="droite">Mentions Légales</span>
-    </p>
-</footer>
+
 
 </body>
+<?php include("BasDePage.php"); ?>
+
 </html>
