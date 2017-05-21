@@ -17,7 +17,7 @@
                     <div class="menu">
                         <li><a href="../Vue/Dashboard.php">Dashboard</a></li>
                         <li><a href="../Vue/monProfil.php">Mon profil</a></li>
-                        <li><a href="../controler/maison.php">Ma maison</a></li>
+                        <li><a href="../controller/maison.php">Ma maison</a></li>
                         <li><a href="../Vue/Boutique.php">Boutique</a></li>
                     </div>
                 </ul>
