@@ -107,7 +107,7 @@ a:focus {
 }
 
 input[type=text]{
-    width: 230px;
+    width: auto;
     height: 25px;
     font-size: 19px;
     margin-left: 35px;
@@ -116,7 +116,7 @@ input[type=text]{
 
 }
 input[type=password]{
-    width: 230px;
+    width: auto;
     height: 25px;
     font-size: 19px;
     margin-left: 35px;
@@ -124,7 +124,7 @@ input[type=password]{
     margin-top: 10px;
 }
 input[type=submit] {
-    width: 120px;
+    width: auto;
     height: 25px;
     margin-right: 35px;
     margin-left: 35px;
