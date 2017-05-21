@@ -9,15 +9,21 @@
 require ('initConnexionBDD.php');
 
 //Fonction qui insert un user dans la Base de donnée
-function insertUser(PDO $bdd,$nom,$prenom,$mot_de_passe,$telephone,$email,$adresse){
-    $query=$bdd->prepare('INSERT INTO user(Nom, Prenom, mot_de_passe,telephone, Mail,adresse) VALUES(:nom, :prenom, :mot_de_passe,:telephone, :email ,:adresse)');
+function insertUser(PDO $bdd,$nom,$prenom,$mot_de_passe,$telephone,$email,$adresse,$sexe,$annees,$mois,$jour){
+
+    //met la date au format DATE de sql (format <annees-mois-jours>)
+    $date_naissance=$annees.'-'.$mois.'-'.$jour ;
+
+    $query=$bdd->prepare('INSERT INTO user(Nom, Prenom, mot_de_passe,telephone, Mail,adresse,sexe,date_inscription,date_naissance) VALUES(:nom, :prenom, :mot_de_passe,:telephone, :email ,:adresse, :sexe,NOW(),:date_naissance)');
     $query->execute(array(
         'nom' => $nom,
         'prenom' => $prenom,
         'mot_de_passe' => $mot_de_passe,
         'telephone' => $telephone,
         'email' => $email,
-        'adresse' => $adresse
+        'adresse' => $adresse,
+        'sexe'=>$sexe,
+        'date_naissance'=>$date_naissance
     ));
 }
 
@@ -44,9 +50,6 @@ function verifMail(PDO $bdd,$mail){
         return false;
     }
 }
-
-
-
 
 
 

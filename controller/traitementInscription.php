@@ -22,6 +22,11 @@ if(isset($_POST['envoi'])){//envoi du formulaire
     $confirmePasse=htmlentities($_POST['confirmePasse']);
     $adresse=htmlentities($_POST['adresse']);
     $tel=htmlentities($_POST['tel']);
+    $sexe = htmlentities($_POST['sexe']);
+    $jour = htmlentities($_POST['jour']);
+    $mois = htmlentities($_POST['mois']);
+    $année = htmlentities($_POST['année']);
+
 
     if(!empty($nom)//vérifie si tout les champs sont bien rempli
         &&!empty($prenom)
@@ -29,11 +34,17 @@ if(isset($_POST['envoi'])){//envoi du formulaire
         &&!empty($pass)
         &&!empty($confirmePasse)
         &&!empty($adresse)
-        &&!empty($tel)) {
+        &&!empty($tel)
+        &&!empty($sexe)
+        &&!empty($jour)
+        &&!empty($mois)
+        &&!empty($année)) {
+
         require ('../modele/Inscription.php');
+
         if(verif2MDP($pass,$confirmePasse)){
             if(verifMail($dbh,$mail)==false){
-                insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse);
+                insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse,$sexe,$année,$mois,$jour);
                 echo 'inscription réussi';
             }
 
