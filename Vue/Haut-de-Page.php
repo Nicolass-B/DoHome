@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="../css/HautBasDePage.css"/>
     <meta charset="UTF-8">
-    <title>Nom de la page</title>
+    <title><?php echo $titre ?></title>
 </head>
 
 
@@ -17,7 +17,7 @@
                     <div class="menu">
                         <li><a href="Dashboard.php">Dashboard</a></li>
                         <li><a href="monProfil.php">Mon profil</a></li>
-                        <li><a href="Maison.php">Ma maison</a></li>
+                        <li><a href="mesmaisons.php">Ma maison</a></li>
                         <li><a href="Boutique.php">Boutique</a></li>
                     </div>
                 </ul>

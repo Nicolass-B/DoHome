@@ -1,8 +1,6 @@
 <?php
 $titre = 'Mes Capteurs';
 include('Haut-de-Page.php');
-require_once('..\Modele\Capteur.php');
-require_once('../controller/capteur.php');
 
 
 ?>
@@ -39,7 +37,6 @@ require_once('../controller/capteur.php');
             <thead>
             <tr>
                 <th>ID</th>
-                <th>Pièce</th>
                 <th>Nom</th>
                 <th>Valeur</th>
                 <th>Unité</th>
@@ -51,12 +48,17 @@ require_once('../controller/capteur.php');
             foreach ($capteur_piece as $row) {
                 ?>
                 <tr>
-                    <td data-title="ID"><?php echo $row['ID_Capteurs'] ?></td>
-                    <td data-title="Pièce"><?php echo $row['ID_pieces'] ?></td>
-                    <td data-title="Nom"><?php echo $row['Type'] ?></td>
-                    <td data-title="Valeur"><?php echo $row['Valeur'] ?></td>
-                    <td data-title="Unité"><?php echo $row['unite'] ?></td>
-                    <td data-title="Etat batterie"><?php echo $row['batt'] ?></td>
+                    <td data-title="ID">
+                        <?php echo $row['ID_Capteurs'] ?></td>
+                    <td data-title="Nom">
+                        <a href="../controller/capteur.php?capteur=<?php echo $row['ID_Capteurs'] ?>"><?php echo $row['Type'] ?></a>
+                    </td>
+                    <td data-title="Valeur">
+                        <?php echo $row['Valeur'] ?></td>
+                    <td data-title="Unité">
+                        <?php echo $row['unite'] ?></td>
+                    <td data-title="Etat batterie">
+                        <?php echo $row['batt'] ?></td>
 
                 </tr>
 

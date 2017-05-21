@@ -6,20 +6,19 @@ $titre = "capteur";
 require_once '../Modele/initConnexionBDD.php';
 require_once '../Modele/capteur.php';
 require_once '../Modele/ajouts.php';
-require_once '../Modele/pieces.php';
+require_once '../Modele/piece.php';
 
-if (isset($_POST['capteur']))
+if (isset($_GET['capteur']))
 {
-    $idcapteur = 1; //$_POST['capteur'];
-    $Capteur = new Capteur($idcapteur, $dbh);
-
-    include('../Vue/capteur.php');
+    $Capteur = new Capteur($_GET['capteur'], $dbh);
+    $titre = $Capteur->typecapteur[0];
+    include('../Vue/mescapteurs.php');
 
 } else {
     // ici le capteur n'est pas précisé dans le formulaire
-    // on renvoie a l'accueil.
+    // on renvoie tous les capteurs de la pièce séléctionnée
     $idmaison = 1; //$_SESSION['idmaison']; to add quand on aura les sessions
-    $idpiece = 1; //$_SSESSION['idpiece']
+    $idpiece = $_GET['piece'];
     //TODO ajouter les sessions et remplacer ici.
     $pieces = getPiecesfromMaison($dbh, $idmaison);
     $capteur_piece = getCapteursfromPiece($dbh, $idpiece);

@@ -1,36 +1,34 @@
 <?php
 
-$titre = "capteur";
+$titre = "Mes Maisons";
 
 
 require_once '../Modele/initConnexionBDD.php';
-require_once '../Modele/pieces.php';
 require_once '../Modele/ajouts.php';
 require_once '../Modele/maison.php';
 
-$idmaison = 1; //$_POST['maison'];
-$piece = getPiecesfromMaison($dbh, $idmaison);
+$iduser = 1; //TODO AJOUTER LES SESSIONS
+$piece = getMaisons($dbh, $iduser);
 
 
-if (isset($_POST['maison'])) {
+if (isset($_GET['maison'])) {
 
-    include('../Vue/Maison.php');
+    include('../controller/piece.php');
 
 } else {
     // ici la piece n'est pas précisé dans le formulaire
-    // on renvoie a l'accueil des pieces
-    include('../Vue/Maison.php');
+    // Affiche toutes les maisons du compte user
+    include('../Vue/mesmaisons.php');
 
 
     if (isset($_POST['envoi'])) {
-        if (isset($_POST['maison'])) {
-            if (isset($_POST['nom_piece'])) {
-                ajoutPiece($dbh, $_POST['type'], $_POST['piece']);
-                ?>
-                <script>alert("<?php echo htmlspecialchars('la pièce a bien été ajoutée', ENT_QUOTES); ?>")</script>
-                <?php
+        if (isset($_POST['nom_maison'])) {
 
-            }
+            ajoutMaison($dbh, $_POST['nom_maison'], $_POST['piece']);
+            ?>
+            <script>alert("<?php echo htmlspecialchars('la maison a bien été ajoutée', ENT_QUOTES); ?>")</script>
+            <?php
+
         }
     } else {
         echo "<p>DAMN, tu viens d'ajouter un capteur dans la pièce !</p>";

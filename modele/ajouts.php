@@ -5,7 +5,7 @@
  * Date: 20/05/2017
  * Time: 19:24
  */
-
+//TODO RAJOUTER LES SESSIONS AUX AJOUTS
 
 include('initConnexionBDD.php');
 
@@ -24,5 +24,14 @@ function ajoutPiece(PDO $bdd, $nom, $idmaison)
     $query->execute(array(
         'idmaison' => $idmaison,
         'nom' => $nom
+    ));
+}
+
+function ajoutMaison(PDO $bdd, $nom, $iduser)
+{
+    $query = $bdd->prepare('INSERT INTO maison(Id, nbpieces, ID_user, Nom) VALUES (NULL ,0,:iduser,:nom)');
+    $query->execute(array(
+        'nom' => $nom,
+        'iduser' => $iduser
     ));
 }

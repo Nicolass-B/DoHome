@@ -21,10 +21,8 @@ function getPiecesfromMaison(PDO $dbh, $idmaison)
 function getCapteursfromPiece(PDO $dbh, $idpiece)
 {
     // permet ded retourner tous les capteurs d'une pièce avec des trucs fu
-    $query = "SELECT `capteurs`.`ID_Capteurs` AS `ID_Capteurs`, `pieces`.`Nom` AS `ID_pieces`, `capteurs`.`Type` AS `Type`, `capteurs`.`Valeur` AS `Valeur`, `capteurs`.`unite` AS `unite`, `capteurs`.`Etat_Batterie` AS `batt`
-              FROM `pieces`
-                    LEFT JOIN `capteurs` ON `capteurs`.`ID_piece` = `pieces`.`ID_pieces`
-              ORDER BY `pieces`.`ID_pieces` ASC";
+    $query = "SELECT `capteurs`.`ID_Capteurs`, `capteurs`.`Type`, `capteurs`.`Valeur`, `capteurs`.`unite`, `capteurs`.`Etat_Batterie` AS 'batt'                    FROM `capteurs` WHERE `capteurs`.`ID_piece`=:idpiece
+              ORDER BY `capteurs`.`ID_Capteurs` ASC";
     $sql = $dbh->prepare($query);
     $sql->execute(['idpiece' => $idpiece]);
     $data = $sql->fetchAll();

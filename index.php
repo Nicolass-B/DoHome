@@ -2,7 +2,7 @@
 <?php
 //TODO S'amuser avec la barre de recherche et des requete mysql LIKE
 session_start();
-require_once("Modele/init.php");
+require_once("Modele/initConnexionBDD.php");
 
 
 if (isset($_GET['home']))
@@ -19,8 +19,10 @@ if (isset($_GET['home']))
 else if (!isset($_SESSION["id_client"]))
 {
     //require("Vue/login.php");
-    ?><link rel="stylesheet" href="Styles/login.css" /><?php
-    include("Controleur/login.php");
+    // On tombe sur la page d'accueil
+    ?>
+    <link rel="stylesheet" href="css/styleHome.css"/><?php
+    include("controller/accueil.php");
 }
 else
 {

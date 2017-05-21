@@ -10,13 +10,12 @@ require_once("initConnexionBDD.php");
 class capteur
 {
 
-    private $idcapteur;
-    private $idpiece;
-    private $idmaison;
-    private $id_user;
-
-    private $typecapteur;
-    private $valeur_now;
+    public $idcapteur;
+    public $idpiece;
+    public $idmaison;
+    public $id_user;
+    public $typecapteur;
+    public $valeur_now;
 
     private $pdo; // pour les acces de l'objet a la base de données
 
