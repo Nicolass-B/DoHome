@@ -5,6 +5,7 @@ header {
     height: 15%;
     display: flex;
 }
+
 body {
     background-size: cover;
     background-image: linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
@@ -12,7 +13,6 @@ body {
     height: auto;
     width: 100%;
 }
-
 
 nav {
     font-family: PT sans;
@@ -22,10 +22,11 @@ nav {
     margin-bottom: auto;
     font-size: 13px;
     color: white;
-    padding:25px;
-    width:418px;
-    height:50px;
+    padding: 25px;
+    width: 418px;
+    height: 50px;
 }
+
 .information {
     font-family: PT sans;
     font-size: 13px;
@@ -34,64 +35,61 @@ nav {
     color: white;
 }
 
-.textIntro{
+.textIntro {
     border-radius: 20px;
     width: 400px;
     border: 2px solid white;
     padding: 15px;
     margin: 20px;
     text-align: center;
-    horizontal-align: middle ;
+    horizontal-align: middle;
     text-align: justify;
     color: white;
     font-size: 18px;
     font-family: PT sans;
 }
 
-footer {
-    position:relative;
-    bottom:0px;
-}
 
 ul {
     list-style: none;
 }
 
-
 .menu li {
     border-left: 2px solid white;
     padding: 6px;
 }
+
 li:first-child {
     border-left: none;
 }
+
 .menu {
     display: flex;
 }
+
 .menu a {
     text-decoration: none;
     color: white;
 }
+
 a:focus {
     color: rgba(0, 197, 85, 0.8);
     text-decoration: none;
 
 }
 
-
-.corpPage{
+.corpPage {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
-.container{
+.container {
     display: flex;
 
 }
 
-.connexion-inscription{
+.connexion-inscription {
     width: 300px;
     height: 250px;
     border-radius: 20px;
@@ -99,23 +97,23 @@ a:focus {
     padding: 15px;
     margin: 20px;
     text-align: center;
-    horizontal-align: middle ;
+    horizontal-align: middle;
     text-align: justify;
     color: white;
     font-size: 15px;
     font-family: PT sans;
 }
 
-input[type=text]{
+input[type=text] {
     width: auto;
     height: 25px;
     font-size: 19px;
     margin-left: 35px;
     margin-top: 20px;
 
-
 }
-input[type=password]{
+
+input[type=password] {
     width: auto;
     height: 25px;
     font-size: 19px;
@@ -123,6 +121,7 @@ input[type=password]{
     margin-right: 35px;
     margin-top: 10px;
 }
+
 input[type=submit] {
     width: auto;
     height: 25px;
@@ -133,24 +132,23 @@ input[type=submit] {
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: #00c555;
-    color:white;
+    color: white;
     border-radius: 10px;
     border: 2px solid #00c555;
     font-size: 13px;
 
 }
 
-
-#t{
-    width:100px;
+#t {
+    width: 100px;
     font-family: "PT Sans";
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: #00c555;
-    color:white;
+    color: white;
     border-radius: 10px;
     border: 2px solid #00c555;
     font-size: 13px;
     margin: 10px;
-    padding:3px;
+    padding: 3px;
 }
