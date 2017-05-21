@@ -14,31 +14,29 @@
 
 if(isset($_POST['envoi'])){//envoi du formulaire
 
-    //htmlentities améliore la sécurité(évite les injections xss)
-    $nom=htmlentities($_POST['nom']);
-    $prenom=htmlentities($_POST['prenom']);
-    $mail=htmlentities($_POST['E-mail']);
-    $pass=htmlentities($_POST['pass']);
-    $confirmePasse=htmlentities($_POST['confirmePasse']);
-    $adresse=htmlentities($_POST['adresse']);
-    $tel=htmlentities($_POST['tel']);
-    $sexe = htmlentities($_POST['sexe']);
-    $jour = htmlentities($_POST['jour']);
-    $mois = htmlentities($_POST['mois']);
-    $année = htmlentities($_POST['année']);
-
-
-    if(!empty($nom)//vérifie si tout les champs sont bien rempli
-        &&!empty($prenom)
-        &&!empty($mail)
-        &&!empty($pass)
-        &&!empty($confirmePasse)
-        &&!empty($adresse)
-        &&!empty($tel)
-        &&!empty($sexe)
-        &&!empty($jour)
-        &&!empty($mois)
-        &&!empty($année)) {
+    if(!empty($_POST['nom'])//vérifie si tout les champs sont bien rempli
+        &&!empty($_POST['prenom'])
+        &&!empty($_POST['E-mail'])
+        &&!empty($_POST['pass'])
+        &&!empty($_POST['confirmePasse'])
+        &&!empty($_POST['adresse'])
+        &&!empty($_POST['tel'])
+        &&!empty($_POST['sexe'])
+        &&!empty($_POST['jour'])
+        &&!empty($_POST['mois'])
+        &&!empty($_POST['année'])) {
+        //htmlentities améliore la sécurité(évite les injections xss)
+        $nom=htmlentities($_POST['nom']);
+        $prenom=htmlentities($_POST['prenom']);
+        $mail=htmlentities($_POST['E-mail']);
+        $pass=htmlentities($_POST['pass']);
+        $confirmePasse=htmlentities($_POST['confirmePasse']);
+        $adresse=htmlentities($_POST['adresse']);
+        $tel=htmlentities($_POST['tel']);
+        $sexe = htmlentities($_POST['sexe']);
+        $jour = htmlentities($_POST['jour']);
+        $mois = htmlentities($_POST['mois']);
+        $année = htmlentities($_POST['année']);
 
         require ('../modele/Inscription.php');
 
