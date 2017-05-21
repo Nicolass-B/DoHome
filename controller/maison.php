@@ -8,7 +8,7 @@ require_once '../Modele/ajouts.php';
 require_once '../Modele/maison.php';
 
 $iduser = 1; //TODO AJOUTER LES SESSIONS
-$piece = getMaisons($dbh, $iduser);
+$maison = getMaisons($dbh, $iduser);
 
 
 if (isset($_GET['maison'])) {
