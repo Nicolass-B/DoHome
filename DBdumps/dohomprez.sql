@@ -164,6 +164,7 @@ create table user
 	date_inscription datetime not null,
 	date_naissance datetime not null,
 	sexe tinyint(1) null,
+	recup varchar(255),
 	constraint user_Mail_uindex
 		unique (Mail)
 )
