@@ -24,13 +24,13 @@
             <tbody>
             <?php
             //TODO quand on aura les POST bien mis, modifier le tableau pour aller taper dans un controleur piece qui présente les capteurs d'une pice si post et tout si rien
-            foreach ($maison as $row) {
+            foreach ($piece as $row) {
                 var_dump($row);
                 ?>
                 <tr>
-                    <td data-title="ID"><?php echo $row['Id'] ?></td>
+                    <td data-title="ID"><?php echo $row['ID_pieces'] ?></td>
                     <td data-title="Nom">
-                        <a href="../controller/piece.php?maison=<?php echo $row['Id'] ?>"> <?php echo $row['Nom'] ?> </a>
+                        <a href="../controller/piece.php?piece=<?php echo $row['ID_pieces'] ?>"> <?php echo $row['Nom'] ?> </a>
                     </td>
                 </tr>
 

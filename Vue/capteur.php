@@ -21,7 +21,7 @@ include('Haut-de-Page.php');
                 <option value="">Pièce</option>
                 <?php
                 foreach ($pieces as $row) {
-                    echo "<option value=" . $row['ID_pièces'] . ">" . $row['Nom'] . "</option>";
+                    echo "<option value=" . $row['ID_pieces'] . ">" . $row['Nom'] . "</option>";
                 }
                 ?>
             </select>

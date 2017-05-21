@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DoHome.iml" filepath="$PROJECT_DIR$/.idea/DoHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DoHome.iml" filepath="$PROJECT_DIR$/DoHome.iml" />
+      <module fileurl="file://C:\xampp\htdocs\DoHome\.idea\DoHome.iml" filepath="C:\xampp\htdocs\DoHome\.idea\DoHome.iml" />
     </modules>
   </component>
 </project>

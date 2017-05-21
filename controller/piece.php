@@ -11,8 +11,8 @@ require_once '../Modele/initConnexionBDD.php';
 require_once '../Modele/piece.php';
 require_once '../Modele/ajouts.php';
 
-$idmaison = $_GET['maison'];
-$piece = getPiecesfromMaison($dbh, $idmaison);
+$idpiece = $_GET['piece']; //TODO MODIFIER CA EN SESSION
+$piece = getPiecesfromMaison($dbh, $idpiece);
 
 
 if (isset($_GET['piece'])) {
@@ -22,7 +22,7 @@ if (isset($_GET['piece'])) {
 } else {
     // ici la piece n'est pas précisé dans le formulaire
     // on renvoie a l'accueil des pieces
-    include('../Vue/mesmaisons.php');
+    include('../Vue/mespieces.php');
 
 
     if (isset($_POST['envoi'])) {
