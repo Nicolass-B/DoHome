@@ -11,8 +11,8 @@ require_once '../Modele/initConnexionBDD.php';
 require_once '../Modele/piece.php';
 require_once '../Modele/ajouts.php';
 
-$idpiece = $_GET['piece']; //TODO MODIFIER CA EN SESSION
-$piece = getPiecesfromMaison($dbh, $idpiece);
+$idmaison = $_GET['maison']; //TODO MODIFIER CA EN SESSION
+$piece = getPiecesfromMaison($dbh, $idmaison);
 
 
 if (isset($_GET['piece'])) {
