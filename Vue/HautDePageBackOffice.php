@@ -13,10 +13,10 @@
             <nav>
                 <ul>
                     <div class="menu">
-                        <li><a href="Dashboard_BackOffice.php">Dashboard</a></li>
-                        <li><a href="analyseBackOffice.php">Analyse</a></li>
-                        <li><a href="messagerieBackOffice.php">Messagerie</a></li>
-                        <li><a href="adminBackOffice.php">BackOffice</a></li>
+                        <li><a href="../Vue/Dashboard_BackOffice.php">Dashboard</a></li>
+                        <li><a href="../Vue/analyseBackOffice.php">Analyse</a></li>
+                        <li><a href="../Vue/messagerieBackOffice.php">Messagerie</a></li>
+                        <li><a href="../Vue/adminBackOffice.php">BackOffice</a></li>
                     </div>
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
         </div>
     </section1>
     <section1>
-        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
+        <a class="LienImage" href="../Vue/home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
 
     </section1>
 </header>

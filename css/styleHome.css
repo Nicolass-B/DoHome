@@ -36,6 +36,7 @@ nav {
     margin-bottom: auto;
     font-size: 13px;
     color: white;
+    float: right;
 }
 
 .textIntro{
@@ -66,8 +67,9 @@ li{
     font-size: 15px;
 }
 .logo{
-    width: 100%;
-    height: auto;
+    float: left;
+    width: 20%;
+    height: 100%;
 }
 
 .corpPage{
@@ -80,7 +82,7 @@ li{
 .conteneur{
     display: flex;
     flex-direction: row;/*organisés sur une ligne*/
-    justify-content: space-between;/* éléments sont étirés sur tout l'axe*/
+    justify-content: space-around;/* éléments sont étirés sur tout l'axe*/
     align-items: center;/*alignés au centre*/
 }
 
@@ -146,4 +148,9 @@ input[type=submit] {
     font-size: 13px;
     margin: 10px;
     padding:3px;
+}
+
+.error{
+    color: red;
+    font-size: 150%;
 }

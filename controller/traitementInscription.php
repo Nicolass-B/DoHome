@@ -5,7 +5,63 @@
  * Date: 09/05/2017
  * Time: 10:01
  */
+/*étape 1 verif envoi formulaire
+ *étape 2 verif des champs
+ *étape 3 verif mdp et mdp confirmation
+ *étape 4 vérif dans bdd si le mail est bien unique
+ *étape 5 insert les données du formulaire dans la BDD
+ * */
 
+if(isset($_POST['envoi'])){//envoi du formulaire
+
+    if(!empty($_POST['nom'])//vérifie si tout les champs sont bien rempli
+        &&!empty($_POST['prenom'])
+        &&!empty($_POST['E-mail'])
+        &&!empty($_POST['pass'])
+        &&!empty($_POST['confirmePasse'])
+        &&!empty($_POST['adresse'])
+        &&!empty($_POST['tel'])
+        &&!empty($_POST['sexe'])
+        &&!empty($_POST['jour'])
+        &&!empty($_POST['mois'])
+        &&!empty($_POST['année'])) {
+        //htmlentities améliore la sécurité(évite les injections xss)
+        $nom=htmlentities($_POST['nom']);
+        $prenom=htmlentities($_POST['prenom']);
+        $mail=htmlentities($_POST['E-mail']);
+        $pass=htmlentities($_POST['pass']);
+        $confirmePasse=htmlentities($_POST['confirmePasse']);
+        $adresse=htmlentities($_POST['adresse']);
+        $tel=htmlentities($_POST['tel']);
+        $sexe = htmlentities($_POST['sexe']);
+        $jour = htmlentities($_POST['jour']);
+        $mois = htmlentities($_POST['mois']);
+        $année = htmlentities($_POST['année']);
+
+        require ('../modele/Inscription.php');
+
+        if(verif2MDP($pass,$confirmePasse)){
+            if(verifMail($dbh,$mail)==false){
+                insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse,$sexe,$année,$mois,$jour);
+                echo 'inscription réussi';
+            }
+
+            else {
+                echo 'le mail est déja utilisé';
+            }
+        }
+        else{
+            echo 'mdp différent';
+        }
+    }
+    else {
+        echo 'les champs ne sont pas tous rempli';
+    }
+
+}
+else{
+    echo 'formulaire non envoier';
+}
 
 
 
@@ -93,3 +149,4 @@
     }
     else
         echo (inscriptionForm());
+*/

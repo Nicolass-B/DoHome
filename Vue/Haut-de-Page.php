@@ -15,10 +15,10 @@
             <nav>
                 <ul>
                     <div class="menu">
-                        <li><a href="Dashboard.php">Dashboard</a></li>
-                        <li><a href="monProfil.php">Mon profil</a></li>
-                        <li><a href="mesmaisons.php">Ma maison</a></li>
-                        <li><a href="Boutique.php">Boutique</a></li>
+                        <li><a href="../Vue/Dashboard.php">Dashboard</a></li>
+                        <li><a href="../Vue/monProfil.php">Mon profil</a></li>
+                        <li><a href="../Vue/mesmaisons.php">Ma maison</a></li>
+                        <li><a href="../Vue/Boutique.php">Boutique</a></li>
                     </div>
                 </ul>
             </nav>
@@ -33,8 +33,8 @@
         </div>
     </section1>
     <section1>
-        <a class="LienImage" href="messagerie.php"><img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/></a>
-        <a class="LienImage" href="home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
+        <a class="LienImage" href="../Vue/messagerie.php"><img class="mail" src="../Vue/img/icon_email.png" alt="logo de l'email"/></a>
+        <a class="LienImage" href="../Vue/home.php"><img class="deconexion" src="../Vue/img/icon_deconnexion.png" alt="logo de la deco"/></a>
 
     </section1>
 </header>

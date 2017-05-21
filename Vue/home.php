@@ -63,6 +63,7 @@
              </p>
 
          </form>
+        <?php if(isset($messageError)){echo  '<span class="error"> '.$messageError.'  </span>' ;} ?>
     </div>
 
 </div>
