@@ -113,3 +113,9 @@ a:focus {
     border: 2px solid #00c555;
     font-size: 13px;
 }
+.errorIncrisptionStyle{
+    color: red;
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 25px;
+}

@@ -5,12 +5,18 @@
  * Date: 09/05/2017
  * Time: 10:01
  */
-/*étape 1 verif envoi formulaire
+
+
+/*
+ * étape 1 verif envoi formulaire
  *étape 2 verif des champs
  *étape 3 verif mdp et mdp confirmation
  *étape 4 vérif dans bdd si le mail est bien unique
  *étape 5 insert les données du formulaire dans la BDD
+ *
  * */
+
+
 
 if(isset($_POST['envoi'])){//envoi du formulaire
 
@@ -43,19 +49,23 @@ if(isset($_POST['envoi'])){//envoi du formulaire
         if(verif2MDP($pass,$confirmePasse)){
             if(verifMail($dbh,$mail)==false){
                 insertUser($dbh,$nom,$prenom,$pass,$tel,$mail,$adresse,$sexe,$année,$mois,$jour);
-                echo 'inscription réussi';
+                $error= 'inscription réussi';
+
             }
 
             else {
-                echo 'le mail est déja utilisé';
+                $error= 'le mail est déja utilisé';
+                include ('../Vue/signUp.php');
             }
         }
         else{
-            echo 'mdp différent';
+            $error= 'mdp différent';
+            include ('../Vue/signUp.php');
         }
     }
     else {
-        echo 'les champs ne sont pas tous rempli';
+        $error= 'les champs ne sont pas tous rempli';
+        include ('../Vue/signUp.php');
     }
 
 }
