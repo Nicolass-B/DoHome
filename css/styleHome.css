@@ -1,33 +1,19 @@
-html {
-    font-size: 62.5%;
-}
-
-header{
+header {
     background-size: cover;
     background-color: #1b1b1b;
-    margin: 0;
-    height:25%;
-
+    width: 100%;
+    height: 15%;
+    display: flex;
 }
 body {
     background-size: cover;
-    background-image:linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
+    background-image: linear-gradient(to bottom right, #2b2b2b, #2b2b2b);
     margin: 0;
-    height:50%;
+    height: auto;
+    width: 100%;
 }
-footer {
-    display: flex;
-    font-family: PT sans;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white;
-    font-size: small;
-    margin: 0px;
-    background-size: cover;
-    background-color: #454545;
-    text-align: center;
-    padding-bottom:70px;
-}
+
+
 nav {
     font-family: PT sans;
     letter-spacing: 2px;
@@ -35,6 +21,16 @@ nav {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 13px;
+    color: white;
+    padding:25px;
+    width:418px;
+    height:50px;
+}
+.information {
+    font-family: PT sans;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     color: white;
 }
 
@@ -52,23 +48,36 @@ nav {
     font-family: PT sans;
 }
 
+footer {
+    position:relative;
+    bottom:0px;
+}
 
-.topPage{
+ul {
+    list-style: none;
+}
+
+
+.menu li {
+    border-left: 2px solid white;
+    padding: 6px;
+}
+li:first-child {
+    border-left: none;
+}
+.menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
-ul{
-    margin-right: 30px;
+.menu a {
+    text-decoration: none;
+    color: white;
 }
-li{
-    display: inline;
-    font-size: 15px;
+a:focus {
+    color: rgba(0, 197, 85, 0.8);
+    text-decoration: none;
+
 }
-.logo{
-    width: 100%;
-    height: auto;
-}
+
 
 .corpPage{
     display: flex;
@@ -77,11 +86,9 @@ li{
 }
 
 
-.conteneur{
+.container{
     display: flex;
-    flex-direction: row;/*organisés sur une ligne*/
-    justify-content: space-between;/* éléments sont étirés sur tout l'axe*/
-    align-items: center;/*alignés au centre*/
+
 }
 
 .connexion-inscription{
