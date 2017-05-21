@@ -5,52 +5,39 @@
     <meta charset="UTF-8">
     <title>Maison</title>
     <link rel="stylesheet" href="../css/Maison.css"/>
+    <link rel="stylesheet" href="../css/tableau.css"/>
 </head>
 <?php include("Haut-de-Page.php"); ?>
 
 <body>
 
+<div>
+    <div class="table-responsive-vertical shadow-z-1">
+        <table id="table" class="table table-hover table-mc-light-blue">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Suppr?</th>
+            <tr>
+            </thead>
+            <tbody>
+            <?php
+            //TODO quand on aura les POST bien mis, modifier le tableau pour aller taper dans un controleur piece qui présente les capteurs d'une pice si post et tout si rien
+            foreach ($piece as $row) {
+                var_dump($row);
+                ?>
+                <tr>
+                    <td data-title="ID"><?php echo $row['ID_pieces'] ?></td>
+                    <td data-title="Nom"><?php echo $row['Nom'] ?></td>
+                </tr>
 
-<x>
-    <section>
-        <div class="salon">
-            <p>SALON</p>
-        </div>
-        <div class="cuisine">
-            <p>CUISINE</p>
-        </div>
-    </section>
-
-    <section2>
-        <div class="chambre1">
-            <p>CHAMBRE 1</p>
-        </div>
-
-
-        <div class="chambre2">
-            <p>CHAMBRE 2</p>
-
-        </div>
-    </section2>
-
-    <section3>
-        <div class="salle_de_bain">
-            <p>SALLE DE BAIN</p>
-
-        </div>
-        <div class="salle_a_manger"
-        <p>SALLE A MANGER</p>
-        </div>
-    </section3>
-
-    <section4>
-
-        <img class="logo2" src="../Vue/img/plus4.png" alt="plus">
-        <div class="ajout"> Ajoutez une pièce</div>
-        <img class="logo3" src="../Vue/img/less1.png" alt="plus">
-
-    </section4>
-</x>
+                <?php
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 

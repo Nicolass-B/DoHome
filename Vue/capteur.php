@@ -13,6 +13,7 @@ require_once('../controller/capteur.php');
         <form method="POST" action="../controller/capteur.php">
             <label>Ajouter un capteur</label>
             <select name="type" required>
+                <option>Type</option>
                 <option value="temp">Température</option>
                 <option value="light">Illumination</option>
                 <option value="presence">Présence</option>

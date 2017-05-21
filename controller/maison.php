@@ -17,8 +17,8 @@ if (isset($_POST['maison'])) {
     include('../Vue/Maison.php');
 
 } else {
-    // ici le capteur n'est pas précisé dans le formulaire
-    // on renvoie a l'accueil.
+    // ici la piece n'est pas précisé dans le formulaire
+    // on renvoie a l'accueil des pieces
     include('../Vue/Maison.php');
 
 
