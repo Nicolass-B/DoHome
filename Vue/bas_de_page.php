@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="../css/HautBasDePage.css"/>
+    <link rel="stylesheet" href="../css/haut_bas_de_page.css"/>
     <meta charset="UTF-8">
     <title>Bas de page</title>
 </head>

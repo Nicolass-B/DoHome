@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="../css/messagerie.css"/>
+    <link rel="stylesheet" href="../css/haut_bas_de_page.css"/>
     <title> Mon profil </title>
 </head>
-<?php include("Haut-de-Page.php"); ?>
+<?php include("haut_de_page.php"); ?>
 
 <body>
 
@@ -17,6 +17,6 @@
 </body>
 
 
-<?php include("BasDePage.php"); ?>
+<?php include("bas_de_page.php"); ?>
 
 </html>

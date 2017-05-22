@@ -30,7 +30,7 @@ if(isset($_POST['envoi'])) { // L'utilisateur vient de valider le formulaire de 
                 include ('../Vue/home.php');
             }
             else{//mdp OK
-              include ('../Vue/Dashboard.php');
+              include('../Vue/dashboard.php');
             }
         }
     }

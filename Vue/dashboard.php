@@ -2,12 +2,12 @@
 <html xmlns:justify xmlns:text-justify="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link rel="stylesheet" href="../css/Dashboard_CSS.css"/>
+    <link rel="stylesheet" href="../css/dashboard_css.css"/>
     <meta charset="UTF-8">
     <title>Dashboard</title>
 </head>
 
-<?php include("Haut-de-Page.php"); ?>
+<?php include("haut_de_page.php"); ?>
 <body>
 
 
@@ -149,7 +149,7 @@
 
 </body>
 
-<?php include("BasDePage.php"); ?>
+<?php include("bas_de_page.php"); ?>
 
 
 </html>

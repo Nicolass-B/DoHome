@@ -1,6 +1,6 @@
 <?php
 $titre = 'Mes Capteurs';
-include('Haut-de-Page.php');
+include('haut_de_page.php');
 require_once('..\Modele\Capteur.php');
 
 

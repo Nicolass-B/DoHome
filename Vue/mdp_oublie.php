@@ -5,7 +5,7 @@
     <link rel="stylesheet" href=""/>
     <title>Mdp oublié</title>
 </head>
-<?php include("Haut-de-Page.php"); ?>
+<?php include("haut_de_page.php"); ?>
 
 <body>
 
@@ -20,6 +20,6 @@
 </body>
 
 
-<?php include("BasDePage.php"); ?>
+<?php include("bas_de_page.php"); ?>
 
 </html>

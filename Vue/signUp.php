@@ -2,7 +2,7 @@
 <html >
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/styleSignUp.css"/>
+    <link rel="stylesheet" href="../css/style_sign_up.css"/>
     <title>Inscription</title>
 </head>
 
@@ -162,6 +162,6 @@
 
 
 </body>
-<?php include("BasDePage.php"); ?>
+<?php include("bas_de_page.php"); ?>
 
 </html>

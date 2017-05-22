@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../css/profil.css"/>
     <title> Mon profil </title>
 </head>
-<?php include("HautDePageBackOffice.php"); ?>
+<?php include("haut_de_page_backoffice.php"); ?>
 
 <body>
 
@@ -15,6 +15,6 @@
 
 
 </body>
-<?php include("BasDePage.php"); ?>
+<?php include("bas_de_page.php"); ?>
 
 </html>

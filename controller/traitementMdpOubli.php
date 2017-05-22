@@ -37,4 +37,4 @@ if(isset($_POST['envoi'])){
 else{
     $mailError="Je suis la";
 }
-require_once ('../Vue/MdpOubli.php');
+require_once('../Vue/mdp_oublie.php');

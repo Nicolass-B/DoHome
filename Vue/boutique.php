@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/BoutiqueCSS.css"/>
     <title>DoHome|Boutique</title>
-    <?php include("Haut-de-Page.php"); ?>
+    <?php include("haut_de_page.php"); ?>
 
 </head>
 
@@ -25,6 +25,6 @@
 </body>
 
 
-<?php include("BasDePage.php"); ?>
+<?php include("bas_de_page.php"); ?>
 
 </html>
