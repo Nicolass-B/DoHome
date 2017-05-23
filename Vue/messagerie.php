@@ -9,10 +9,17 @@
 
 <body>
 <section>
-    <fieldset>
+    <div class="information">
+        <fieldset>
 
-        <div class="information">
-            <legend><h2>Contactez-nous</h2></legend>
+        <ul>
+            <div class="menusec">
+                <li class="enCours"><a href="messagerie.php">Contactez-nous</a></li>
+                <li><a href="messagerie.php">Ma boîte de récéption</a></li>
+            </div>
+        </ul>
+
+
             <form method="post" action="">
                 <div class="test">
                     <ul>
@@ -31,9 +38,10 @@
             <div class="bouton3">
                 <input type="button" value="Envoyer votre message" href="lien" id="bouton3"/>
             </div>
-        </div>
 
-    </fieldset>
+        </fieldset>
+    </div>
+
 </section>
 
 
