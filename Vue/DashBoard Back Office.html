@@ -1,0 +1,70 @@
+<!--version quasi definitive-->
+
+<!DOCTYPE html>
+<?php
+include("fonctions.php");
+
+?>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="FAQ CSS.css">
+        <title>DoHome|Dashboard BackOffice</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img class="logo" src="C:\Users\sebastien\Dossiers Windows\Desktop\Jormungand\Periode 2016-2019\ISEP\1ere Année 2016 -2017\APP\Semestre 2\Informatique\fond_transparent3.png" alt="logo de l entreprise">
+
+            <nav>
+                 <ul id="menu"><!--
+                    --><li><a href="#">Dashboard</a>|</li><!--
+                    --><li><a href="#">Analyse</a>|</li><!--
+                    --><li><a href="#">Messagerie</a>|</li><!--
+                    C est la où on utilise le PHP pour placer le Prenom et le nom du client!-->
+                 </ul>
+            </nav>
+            </div>
+            <section1>
+                <div class="recherche">
+                    <form action="/search" id="searchthis" method="get">
+                        <input id="search" name="q" type="text" placeholder="Rechercher"/>
+                        <input id="search-btn" type="submit" value="Rechercher"/>
+                    </form>
+                </div>
+            </section1>
+            <section1>
+                <a class="LienImage" href="messagerie.php"><img class="mail" src="C:\Users\sebastien\Dossiers Windows\Desktop\Jormungand\Periode 2016-2019\ISEP\1ere Année 2016 -2017\APP\Semestre 2\Informatique\icon_email.png" alt="logo de l'email"/></a>
+                <a class="LienImage" href="home.php"><img class="deconexion" src="C:\Users\sebastien\Dossiers Windows\Desktop\Jormungand\Periode 2016-2019\ISEP\1ere Année 2016 -2017\APP\Semestre 2\Informatique\icon_deconnexion.png" alt="logo de la deco"/></a>
+
+            </section1>
+        </header>
+        <div class="information">
+            <div class="dashAdmin">
+                <b>
+                <section2>
+                    <span class="gaucher"><a class="LienImage" href="analyse_backoffice.php"><img class="analyse" src="C:\Users\sebastien\Dossiers Windows\Desktop\Jormungand\Periode 2016-2019\ISEP\1ere Année 2016 -2017\APP\Semestre 2\Informatique/analyse.png" alt="logo analyse"/></a>
+                        Analyse des comptes
+                    </span>
+                </section2>
+                <section2>
+                    <span class="centrer"><a class="LienImage" href="messagerie_backoffice.php"><img class="messagerie" src="C:\Users\sebastien\Dossiers Windows\Desktop\Jormungand\Periode 2016-2019\ISEP\1ere Année 2016 -2017\APP\Semestre 2\Informatique/messagerie.png" alt="logo message"/></a>
+                         Messagerie interne
+                    </span>
+                </section2>
+                <section2>
+                    <span class="droitier"><a class="LienImage" href="admin_backoffice.php"><img class="backOffice" src="C:\Users\sebastien\Dossiers Windows\Desktop\Jormungand\Periode 2016-2019\ISEP\1ere Année 2016 -2017\APP\Semestre 2\Informatique/backoffice.png" alt="logo backOffice"/></a>
+                        BackOffice
+                    </span>
+                </section2>
+                </b>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <a>
+            <span class="centre">Powered By DoHome Enterprise™</span>
+            <span class="droite">Mentions Légales</span>
+        </a>
+    </footer>
+</html>
